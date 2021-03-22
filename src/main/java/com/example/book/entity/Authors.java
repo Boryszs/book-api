@@ -1,8 +1,6 @@
 package com.example.book.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -11,13 +9,15 @@ import java.util.List;
 @Table(name = "authors")
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 @Data
 public class Authors {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "author_id", unique = true, nullable = false)
-    private Long id;
+    private Integer id;
 
     @Column(name = "name", updatable = false)
     private String name;
