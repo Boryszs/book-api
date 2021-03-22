@@ -17,5 +17,7 @@ public class DtoBook {
 
     private Integer published;
 
+    private String image;
+
     private List<DtoAuthors> author;
 }

@@ -13,5 +13,7 @@ public class DtoBooks {
 
     private String title;
 
+    private String image;
+
     private Integer published;
 }

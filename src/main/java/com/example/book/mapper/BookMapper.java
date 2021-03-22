@@ -18,6 +18,7 @@ public class BookMapper {
        dtoBook.setId(book.getId());
        dtoBook.setTitle(book.getTitle());
        dtoBook.setPublished(book.getPublished());
+       dtoBook.setImage(book.getImage());
 
        book.getAuthors().forEach(authors -> {
            DtoAuthors dtoAuthor = new DtoAuthors();

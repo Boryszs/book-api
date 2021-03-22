@@ -25,6 +25,9 @@ public class Book {
     @Column(name = "published")
     private Integer published;
 
+    @Column(name = "image")
+    private String image;
+
     @ManyToMany(mappedBy = "books", cascade = { CascadeType.ALL })
     private List<Authors> authors;
 }
