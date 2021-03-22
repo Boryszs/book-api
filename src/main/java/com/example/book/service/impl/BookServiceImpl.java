@@ -30,8 +30,8 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public DtoBook findByTitle(String name) {
-        return bookMapper.toDtoBook(bookRepository.findByTitle(name));
+    public DtoBook findById(Integer id) {
+        return bookMapper.toDtoBook(bookRepository.findById(id).get());
     }
 
     @Override

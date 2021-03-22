@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface BookService {
     List<DtoBook> findAll();
-    DtoBook findByTitle(String name);
+    DtoBook findById(Integer name);
     void deleteById(Integer id);
 }

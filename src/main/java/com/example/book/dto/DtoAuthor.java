@@ -1,6 +1,8 @@
 package com.example.book.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -15,5 +17,5 @@ public class DtoAuthor {
 
     private String surname;
 
-    private List<DtoBook> book;
+    private List<DtoBooks> book;
 }

@@ -1,9 +1,7 @@
 package com.example.book.mapper;
 
-import com.example.book.dto.DtoAuthor;
 import com.example.book.dto.DtoAuthors;
 import com.example.book.dto.DtoBook;
-import com.example.book.entity.Authors;
 import com.example.book.entity.Book;
 import org.springframework.stereotype.Component;
 
@@ -21,13 +19,13 @@ public class BookMapper {
        dtoBook.setTitle(book.getTitle());
        dtoBook.setPublished(book.getPublished());
 
-       for(Authors authors:book.getAuthors()){
+       book.getAuthors().forEach(authors -> {
            DtoAuthors dtoAuthor = new DtoAuthors();
            dtoAuthor.setId(authors.getId());
            dtoAuthor.setName(authors.getName());
            dtoAuthor.setSurname(authors.getSurname());
-            authorList.add(dtoAuthor);
-       }
+           authorList.add(dtoAuthor);
+       });
        dtoBook.setAuthor(authorList);
 
        return dtoBook;

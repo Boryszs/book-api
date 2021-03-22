@@ -18,7 +18,7 @@ import java.util.List;
 public class BookController {
 
     private BookService bookService;
-    private static  final Logger LOGGER = LoggerFactory.getLogger(BookController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(BookController.class);
 
     @Autowired
     public BookController(BookService bookService) {
@@ -31,26 +31,26 @@ public class BookController {
         return new ResponseEntity(bookService.findAll(), HttpStatus.OK);
     }
 
-    @PostMapping
-    public ResponseEntity<DtoBook> getBook(@RequestParam(value = "title", required = false) String title){
-        LOGGER.info("GET BOOK TITLE ",title);
-        return new ResponseEntity(bookService.findByTitle(title), HttpStatus.OK);
+    @GetMapping("/{id}")
+    public ResponseEntity<DtoBook> getBook(@PathVariable(value = "id") Integer id){
+        LOGGER.info("GET BOOK TITLE ",id);
+        return new ResponseEntity(bookService.findById(id), HttpStatus.OK);
     }
 
-    @DeleteMapping
-    public void deleteBook(@RequestParam(value = "id", required = false) Integer id){
+    @DeleteMapping(value = "/{id}")
+    public void deleteBook(@PathVariable(value = "id") Integer id){
         LOGGER.info("DELETE BOOK ID ", id);
         bookService.deleteById(id);
     }
 
-    @PutMapping
-    public void updateBook(@RequestParam(value = "id", required = false) Integer id, @RequestBody DtoBooks dtoBooks){
+    @PutMapping(value = "/{id}")
+    public void updateBook(@PathVariable(value = "id") Integer id, @RequestBody DtoBooks dtoBooks){
 
     }
 
     @PostMapping
     public void saveBook(@RequestBody DtoBook dtoBook){
-        
+
     }
 
 }

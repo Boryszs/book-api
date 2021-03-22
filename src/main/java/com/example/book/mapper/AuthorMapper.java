@@ -1,14 +1,35 @@
 package com.example.book.mapper;
 
-import com.example.book.dto.DtoAuthors;
+import com.example.book.dto.DtoAuthor;
+import com.example.book.dto.DtoBooks;
 import com.example.book.entity.Authors;
+import com.example.book.entity.Book;
 import org.springframework.stereotype.Component;
+
+import java.util.LinkedList;
+import java.util.List;
 
 @Component
 public class AuthorMapper {
 
-    public DtoAuthors toDtoAuthors(Authors authors){
-        DtoAuthors dtoAuthors = new DtoAuthors();
-        return dtoAuthors;
+    public DtoAuthor toDtoAuthors(Authors authors){
+        DtoAuthor dtoAuthor = new DtoAuthor();
+        List<DtoBooks> booksList = new LinkedList<>();
+
+        dtoAuthor.setId(authors.getId());
+        dtoAuthor.setName(authors.getName());
+        dtoAuthor.setSurname(authors.getSurname());
+
+
+        for(Book book:authors.getBooks()){
+            DtoBooks dtoBooks = new DtoBooks();
+            dtoBooks.setId(book.getId());
+            dtoBooks.setTitle(book.getTitle());
+            dtoBooks.setPublished(book.getPublished());
+            booksList.add(dtoBooks);
+        }
+        dtoAuthor.setBook(booksList);
+
+        return dtoAuthor;
     }
 }
