@@ -1,6 +1,7 @@
 package com.example.book.service.impl;
 
 import com.example.book.dto.request.DtoBookRequest;
+import com.example.book.dto.request.DtoBooksRequest;
 import com.example.book.dto.response.DtoBookResponse;
 import com.example.book.entity.Authors;
 import com.example.book.entity.Book;
@@ -69,4 +70,17 @@ public class BookServiceImpl implements BookService {
            }
         }
     }
+
+    @Override
+    public void update(Integer id, DtoBooksRequest dtoBooksRequest) {
+       Optional<Book> book = bookRepository.findById(id);
+       if(book.isPresent()){
+           book.get().setImage(dtoBooksRequest.getImage());
+           book.get().setTitle(dtoBooksRequest.getTitle());
+           book.get().setPublished(dtoBooksRequest.getPublished());
+           bookRepository.save(book.get());
+       }
+    }
+
+
 }

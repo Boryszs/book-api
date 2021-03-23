@@ -3,7 +3,6 @@ package com.example.book.controller;
 import com.example.book.dto.request.DtoBookRequest;
 import com.example.book.dto.request.DtoBooksRequest;
 import com.example.book.dto.response.DtoBookResponse;
-import com.example.book.dto.response.DtoBooksResponse;
 import com.example.book.service.BookService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,8 +45,9 @@ public class BookController {
     }
 
     @PutMapping(value = "/{id}")
-    public void updateBook(@PathVariable(value = "id") Integer id, @RequestBody DtoBooksResponse dtoBooksResponse){
-
+    public void updateBook(@PathVariable(value = "id") Integer id, @RequestBody DtoBooksRequest dtoBooksRequest){
+        LOGGER.info("UPDATE BOOK ID ",id);
+        bookService.update(id,dtoBooksRequest);
     }
 
     @PostMapping

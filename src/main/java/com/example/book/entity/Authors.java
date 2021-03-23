@@ -16,16 +16,16 @@ public class Authors {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "author_id", unique = true, nullable = false)
+    @Column(name = "author_id")
     private Integer id;
 
-    @Column(name = "name", updatable = false)
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "surname", updatable = false)
+    @Column(name = "surname")
     private String surname;
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "author_book",
             joinColumns = {@JoinColumn(name = "author_id")},
             inverseJoinColumns = {@JoinColumn(name = "book_id")})

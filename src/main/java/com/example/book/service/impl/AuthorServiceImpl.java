@@ -1,6 +1,7 @@
 package com.example.book.service.impl;
 
 import com.example.book.dto.request.DtoAuthorRequest;
+import com.example.book.dto.request.DtoAuthorsRequest;
 import com.example.book.dto.response.DtoAuthorResponse;
 import com.example.book.entity.Authors;
 import com.example.book.entity.Book;
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class AuthorServiceImpl implements AuthorService {
@@ -66,6 +68,18 @@ public class AuthorServiceImpl implements AuthorService {
                 author.setBooks(new LinkedList<>(List.of(book)));
                 authorRespoitory.save(author);
             }
+        }
+    }
+
+    @Override
+    public void update(Integer id, DtoAuthorsRequest dtoAuthorsRequest) {
+        Optional<Authors> authors = authorRespoitory.findById(id);
+        if(authors.isPresent()){
+            authors.get().setName(dtoAuthorsRequest.getName());
+            authors.get().setSurname(dtoAuthorsRequest.getSurname());
+            authors.get().setBooks(authors.get().getBooks());
+            authorRespoitory.save(authors.get());
+
         }
     }
 }

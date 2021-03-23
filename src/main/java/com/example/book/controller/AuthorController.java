@@ -45,6 +45,12 @@ public class AuthorController {
         authorService.deleteById(id);
     }
 
+    @PutMapping("/{id}")
+    public void updateAuthor(@PathVariable(value = "id") Integer id,@RequestBody DtoAuthorsRequest authorsRequest){
+        LOGGER.info("UPDATE AUTHOR ID {}", id);
+        authorService.update(id,authorsRequest);
+    }
+
     @PostMapping
     public void addAuthor(@RequestBody DtoAuthorRequest authorRequest){
         LOGGER.info("ADD AUTHOR");
