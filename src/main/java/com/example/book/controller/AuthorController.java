@@ -1,7 +1,9 @@
 package com.example.book.controller;
 
 
-import com.example.book.dto.DtoBook;
+import com.example.book.dto.request.DtoAuthorRequest;
+import com.example.book.dto.request.DtoAuthorsRequest;
+import com.example.book.dto.response.DtoBookResponse;
 import com.example.book.service.AuthorService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,20 +28,26 @@ public class AuthorController {
     }
 
     @GetMapping
-    public ResponseEntity<List<DtoBook>> getAllBook(){
+    public ResponseEntity<List<DtoBookResponse>> getAllBook(){
         LOGGER.info("GET ALL AUTHORS");
         return new ResponseEntity(authorService.findAll(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<List<DtoBook>> getAuthor(@PathVariable(value = "id") Integer id){
-        LOGGER.info("GET AUTHORS ID ",id);
+    public ResponseEntity<List<DtoBookResponse>> getAuthor(@PathVariable(value = "id") Integer id){
+        LOGGER.info("GET AUTHOR ID ",id);
         return new ResponseEntity(authorService.findById(id), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
     public void deleteAuthor(@PathVariable(value = "id") Integer id){
-        LOGGER.info("DELETE AUTHORS ID ",id);
+        LOGGER.info("DELETE AUTHOR ID ",id);
         authorService.deleteById(id);
+    }
+
+    @PostMapping
+    public void addAuthor(@RequestBody DtoAuthorRequest authorRequest){
+        LOGGER.info("ADD AUTHOR");
+        authorService.save(authorRequest);
     }
 }

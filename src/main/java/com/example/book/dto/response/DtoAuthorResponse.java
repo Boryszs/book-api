@@ -1,4 +1,4 @@
-package com.example.book.dto;
+package com.example.book.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,15 +9,13 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class DtoBook {
+public class DtoAuthorResponse {
 
     private Integer id;
 
-    private String title;
+    private String name;
 
-    private Integer published;
+    private String surname;
 
-    private String image;
-
-    private List<DtoAuthors> author;
+    private List<DtoBooksResponse> book;
 }

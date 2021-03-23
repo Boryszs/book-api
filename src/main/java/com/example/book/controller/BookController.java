@@ -1,7 +1,9 @@
 package com.example.book.controller;
 
-import com.example.book.dto.DtoBook;
-import com.example.book.dto.DtoBooks;
+import com.example.book.dto.request.DtoBookRequest;
+import com.example.book.dto.request.DtoBooksRequest;
+import com.example.book.dto.response.DtoBookResponse;
+import com.example.book.dto.response.DtoBooksResponse;
 import com.example.book.service.BookService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,13 +28,13 @@ public class BookController {
     }
 
     @GetMapping
-    public ResponseEntity<List<DtoBook>> getAllBook(){
+    public ResponseEntity<List<DtoBookResponse>> getAllBook(){
         LOGGER.info("GET ALL BOOKS");
         return new ResponseEntity(bookService.findAll(), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<DtoBook> getBook(@PathVariable(value = "id") Integer id){
+    public ResponseEntity<DtoBookResponse> getBook(@PathVariable(value = "id") Integer id){
         LOGGER.info("GET BOOK TITLE ",id);
         return new ResponseEntity(bookService.findById(id), HttpStatus.OK);
     }
@@ -44,13 +46,14 @@ public class BookController {
     }
 
     @PutMapping(value = "/{id}")
-    public void updateBook(@PathVariable(value = "id") Integer id, @RequestBody DtoBooks dtoBooks){
+    public void updateBook(@PathVariable(value = "id") Integer id, @RequestBody DtoBooksResponse dtoBooksResponse){
 
     }
 
     @PostMapping
-    public void saveBook(@RequestBody DtoBook dtoBook){
-
+    public void saveBook(@RequestBody DtoBookRequest dtoBookRequest){
+        LOGGER.info("ADD BOOK");
+        bookService.save(dtoBookRequest);
     }
 
 }

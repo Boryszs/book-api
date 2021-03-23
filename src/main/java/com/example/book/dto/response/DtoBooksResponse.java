@@ -1,4 +1,4 @@
-package com.example.book.dto;
+package com.example.book.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class DtoBooks {
+public class DtoBooksResponse {
 
     private Integer id;
 

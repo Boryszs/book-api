@@ -16,7 +16,7 @@ public class Book {
 
     @Id
     @Column(name = "book_id",unique = true,nullable = false)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column(name = "title")
