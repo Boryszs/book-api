@@ -1,0 +1,32 @@
+2021-03-25T23:52:25.395+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 8840 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-25T23:52:25.406+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-25T23:52:26.001+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-25T23:52:26.049+0100 INFO Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2021-03-25T23:52:26.407+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-25T23:52:26.422+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-25T23:52:26.422+0100 INFO Starting service [Tomcat]
+2021-03-25T23:52:26.422+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-25T23:52:26.512+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-25T23:52:26.512+0100 INFO Root WebApplicationContext: initialization completed in 1075 ms
+2021-03-25T23:52:26.540+0100 INFO HikariPool-1 - Starting...
+2021-03-25T23:52:26.613+0100 INFO HikariPool-1 - Start completed.
+2021-03-25T23:52:26.623+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-25T23:52:26.715+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-25T23:52:26.762+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-25T23:52:26.844+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-25T23:52:26.914+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-25T23:52:27.346+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-25T23:52:27.346+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-25T23:52:27.784+0100 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-25T23:52:27.932+0100 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-25T23:52:28.063+0100 INFO Starting ProtocolHandler ["http-nio-8080"]
+2021-03-25T23:52:28.078+0100 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-25T23:52:28.085+0100 INFO Context refreshed
+2021-03-25T23:52:28.085+0100 INFO Found 1 custom documentation plugin(s)
+2021-03-25T23:52:28.101+0100 INFO Scanning for api listing references
+2021-03-25T23:52:28.179+0100 INFO Generating unique operation named: getAllBookUsingGET_1
+2021-03-25T23:52:28.201+0100 INFO Started BookApplication in 3.097 seconds (JVM running for 4.14)
+2021-03-25T23:52:29.622+0100 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-25T23:52:29.622+0100 INFO Initializing Servlet 'dispatcherServlet'
+2021-03-25T23:52:29.625+0100 INFO Completed initialization in 3 ms
+2021-03-25T23:52:29.642+0100 INFO GET ALL AUTHORS
