@@ -28,6 +28,9 @@ public class Book {
     @Column(name = "image")
     private String image;
 
+    @Column(name = "available")
+    private Boolean available;
+
     @ManyToMany(mappedBy = "books", cascade = { CascadeType.ALL })
     private List<Authors> authors;
 }

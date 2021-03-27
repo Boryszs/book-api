@@ -4,13 +4,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class DtoBooksRequest {
+public class DtoBooksRequest implements Serializable {
     private String title;
+
+    private Integer published;
 
     private String image;
 
-    private Integer published;
+    private Boolean available;
 }

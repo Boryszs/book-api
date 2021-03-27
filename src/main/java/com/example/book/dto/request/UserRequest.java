@@ -1,4 +1,4 @@
-package com.example.book.dto.response;
+package com.example.book.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,11 +9,10 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class DtoAuthorsResponse implements Serializable {
-    private Integer id;
-
+public class UserRequest implements Serializable {
+    private String username;
     private String name;
-
     private String surname;
-
+    private String password;
+    private String email;
 }

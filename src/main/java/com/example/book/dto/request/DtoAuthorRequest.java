@@ -5,12 +5,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class DtoAuthorRequest {
+public class DtoAuthorRequest implements Serializable {
 
     @JsonProperty(value = "authors")
     private List<DtoAuthorsRequest> dtoAuthorsRequest;

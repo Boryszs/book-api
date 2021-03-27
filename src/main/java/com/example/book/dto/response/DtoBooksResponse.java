@@ -4,16 +4,20 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class DtoBooksResponse {
+public class DtoBooksResponse implements Serializable {
 
     private Integer id;
 
     private String title;
 
+    private Integer published;
+
     private String image;
 
-    private Integer published;
+    private Boolean available;
 }
