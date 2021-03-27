@@ -19,5 +19,7 @@ public class DtoBooksResponse implements Serializable {
 
     private String image;
 
+    private String description;
+
     private Boolean available;
 }

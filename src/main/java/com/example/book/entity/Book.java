@@ -28,6 +28,10 @@ public class Book {
     @Column(name = "image")
     private String image;
 
+    @Lob
+    @Column(name = "description", length = 100000 )
+    private String description;
+
     @Column(name = "available")
     private Boolean available;
 

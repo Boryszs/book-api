@@ -21,7 +21,7 @@ public class BookMapper {
        dtoBookResponse.setPublished(book.getPublished());
        dtoBookResponse.setImage(book.getImage());
        dtoBookResponse.setAvailable(book.getAvailable());
-
+       dtoBookResponse.setDescription(book.getDescription());
        book.getAuthors().forEach(authors -> {
            DtoAuthorsResponse dtoAuthor = new DtoAuthorsResponse();
            dtoAuthor.setId(authors.getId());
@@ -40,6 +40,7 @@ public class BookMapper {
        book.setTitle(dtoBooksRequest.getTitle());
        book.setPublished(dtoBooksRequest.getPublished());
        book.setAvailable(dtoBooksRequest.getAvailable());
+       book.setDescription(dtoBooksRequest.getDescription());
        return book;
     }
 

@@ -21,6 +21,7 @@ public class BookListMapper {
            dtoBookResponse.setPublished(book.getPublished());
            dtoBookResponse.setImage(book.getImage());
            dtoBookResponse.setAvailable(book.getAvailable());
+           dtoBookResponse.setDescription(book.getDescription());
            List<DtoAuthorsResponse> authorList = new LinkedList<>();
            book.getAuthors().forEach(authors -> {
                DtoAuthorsResponse dtoAuthorsResponse = new DtoAuthorsResponse();

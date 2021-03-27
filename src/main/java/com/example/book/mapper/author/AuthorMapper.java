@@ -29,6 +29,7 @@ public class AuthorMapper {
             dtoBooksResponse.setPublished(book.getPublished());
             dtoBooksResponse.setImage(book.getImage());
             dtoBooksResponse.setAvailable(book.getAvailable());
+            dtoBooksResponse.setDescription(book.getDescription());
             booksList.add(dtoBooksResponse);
         }
         dtoAuthorResponse.setBook(booksList);

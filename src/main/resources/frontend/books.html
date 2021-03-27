@@ -6,21 +6,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Books</title>
-    <script>
+    <script type="text/javascript">
             $.ajax({
                 url: "http://127.0.0.1:8080/book",
                 type: "get", //send it through get method
                 success: function (response) {
-                    var trHTML = '';
+                    let trHTML = '';
                     $.each(response, function (i, item) {
-                        trHTML += '<tr><td class="align-middle font-weight-bold">' + item.title + '</td><td class="align-middle">' + item.published + '</td><td class="align-middle">' + "<img src="+item.image+" width='50' >" + '</td></tr>';
+                        trHTML += '<tr onclick="goToDetails('+item.id+')"><td class="align-middle font-weight-bold">' + item.title + '</td><td class="align-middle">' + item.published + '</td><td class="align-middle">' + "<img src="+item.image+" width='50' >" + '</td></tr>';
                     });
                     $('#records_table').append(trHTML);
                 },
                 error: function (xhr) {
-                    //Do Something to handle error
+                    console.log("error");
                 }
             });
+
+            function goToDetails(id) {
+                window.location.href='detail-book.html?id='+id;
+            }
 
     </script>
 </head>

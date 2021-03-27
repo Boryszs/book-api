@@ -1780,3 +1780,1226 @@ io.jsonwebtoken.SignatureException: JWT signature does not match locally compute
 2021-03-27T13:00:26.376+0100 INFO GET ALL BOOKS
 2021-03-27T13:00:44.506+0100 WARN JWT Token does not begin with Bearer String
 2021-03-27T13:00:44.506+0100 INFO GET ALL BOOKS
+2021-03-27T13:19:03.884+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 20860 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-27T13:19:03.895+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-27T13:19:04.621+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-27T13:19:04.691+0100 INFO Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2021-03-27T13:19:04.916+0100 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1b4872bc' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T13:19:04.921+0100 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T13:19:05.121+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-27T13:19:05.131+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-27T13:19:05.131+0100 INFO Starting service [Tomcat]
+2021-03-27T13:19:05.131+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27T13:19:05.221+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-27T13:19:05.221+0100 INFO Root WebApplicationContext: initialization completed in 1295 ms
+2021-03-27T13:19:05.256+0100 INFO HikariPool-1 - Starting...
+2021-03-27T13:19:05.341+0100 INFO HikariPool-1 - Start completed.
+2021-03-27T13:19:05.341+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-27T13:19:05.451+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-27T13:19:05.501+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-27T13:19:05.661+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-27T13:19:05.751+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-27T13:19:06.281+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-27T13:19:06.281+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T13:19:06.606+0100 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-27T13:19:06.996+0100 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73072745, org.springframework.security.web.context.SecurityContextPersistenceFilter@779cb140, org.springframework.security.web.header.HeaderWriterFilter@14091e24, org.springframework.security.web.authentication.logout.LogoutFilter@33a58fcb, com.example.book.security.JwtFilter@1a6a4595, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70a91d72, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6bf70600, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4bdbfbc6, org.springframework.security.web.session.SessionManagementFilter@2512155e, org.springframework.security.web.access.ExceptionTranslationFilter@2370c90, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6bc08a77]
+2021-03-27T13:19:07.081+0100 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-27T13:19:07.201+0100 INFO Starting ProtocolHandler ["http-nio-8080"]
+2021-03-27T13:19:07.221+0100 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-27T13:19:07.228+0100 INFO Context refreshed
+2021-03-27T13:19:07.231+0100 INFO Found 1 custom documentation plugin(s)
+2021-03-27T13:19:07.241+0100 INFO Scanning for api listing references
+2021-03-27T13:19:07.341+0100 INFO Generating unique operation named: getAllBookUsingGET_1
+2021-03-27T13:19:07.361+0100 INFO Started BookApplication in 4.231 seconds (JVM running for 5.545)
+2021-03-27T13:19:15.596+0100 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-27T13:19:15.596+0100 INFO Initializing Servlet 'dispatcherServlet'
+2021-03-27T13:19:15.597+0100 INFO Completed initialization in 1 ms
+2021-03-27T13:19:15.607+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:19:15.632+0100 INFO GET ALL BOOKS
+2021-03-27T13:41:06.885+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:41:06.897+0100 INFO GET ALL BOOKS
+2021-03-27T13:41:44.843+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:41:44.844+0100 INFO GET ALL BOOKS
+2021-03-27T13:42:36.217+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:42:36.218+0100 INFO GET ALL BOOKS
+2021-03-27T13:43:08.367+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:43:45.955+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:44:16.742+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 21084 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-27T13:44:16.755+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-27T13:44:17.875+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-27T13:44:17.950+0100 INFO Finished Spring Data repository scanning in 69 ms. Found 3 JPA repository interfaces.
+2021-03-27T13:44:18.175+0100 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1f71194d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T13:44:18.178+0100 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T13:44:18.390+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-27T13:44:18.397+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-27T13:44:18.399+0100 INFO Starting service [Tomcat]
+2021-03-27T13:44:18.399+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27T13:44:18.485+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-27T13:44:18.485+0100 INFO Root WebApplicationContext: initialization completed in 1678 ms
+2021-03-27T13:44:18.518+0100 INFO HikariPool-1 - Starting...
+2021-03-27T13:44:18.594+0100 INFO HikariPool-1 - Start completed.
+2021-03-27T13:44:18.601+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-27T13:44:18.723+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-27T13:44:18.785+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-27T13:44:18.940+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-27T13:44:19.059+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-27T13:44:19.618+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-27T13:44:19.625+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T13:44:19.956+0100 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-27T13:44:20.399+0100 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3eadfbbb, org.springframework.security.web.context.SecurityContextPersistenceFilter@45ecdd32, org.springframework.security.web.header.HeaderWriterFilter@35c9f527, org.springframework.security.web.authentication.logout.LogoutFilter@4c1fed69, com.example.book.security.JwtFilter@2b4ba2d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68e62b3b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@92775a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@550e7ef6, org.springframework.security.web.session.SessionManagementFilter@2e60d4f4, org.springframework.security.web.access.ExceptionTranslationFilter@13cc3984, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b72860c]
+2021-03-27T13:44:20.481+0100 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-27T13:44:20.612+0100 INFO Starting ProtocolHandler ["http-nio-8080"]
+2021-03-27T13:44:20.632+0100 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-27T13:44:20.637+0100 INFO Context refreshed
+2021-03-27T13:44:20.646+0100 INFO Found 1 custom documentation plugin(s)
+2021-03-27T13:44:20.651+0100 INFO Scanning for api listing references
+2021-03-27T13:44:20.755+0100 INFO Generating unique operation named: getAllBookUsingGET_1
+2021-03-27T13:44:20.775+0100 INFO Started BookApplication in 4.454 seconds (JVM running for 5.59)
+2021-03-27T13:44:22.512+0100 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-27T13:44:22.513+0100 INFO Initializing Servlet 'dispatcherServlet'
+2021-03-27T13:44:22.515+0100 INFO Completed initialization in 2 ms
+2021-03-27T13:44:22.524+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:44:22.553+0100 INFO GET BOOK TITLE 
+2021-03-27T13:44:28.445+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:44:28.778+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:44:29.206+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:51:11.369+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:51:11.372+0100 INFO GET BOOK TITLE 
+2021-03-27T13:51:28.510+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:51:28.511+0100 INFO GET BOOK TITLE 
+2021-03-27T13:51:36.495+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:51:36.497+0100 INFO GET BOOK TITLE 
+2021-03-27T13:51:44.782+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:51:44.783+0100 INFO GET BOOK TITLE 
+2021-03-27T13:53:49.463+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:53:49.465+0100 INFO GET BOOK TITLE 
+2021-03-27T13:54:05.708+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:54:05.709+0100 INFO GET BOOK TITLE 
+2021-03-27T13:54:45.710+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:54:45.711+0100 INFO GET BOOK TITLE 
+2021-03-27T13:54:54.751+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:54:54.752+0100 INFO GET BOOK TITLE 
+2021-03-27T13:55:14.079+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:55:14.080+0100 INFO GET BOOK TITLE 
+2021-03-27T13:56:00.844+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:56:00.845+0100 INFO GET BOOK TITLE 
+2021-03-27T13:56:13.825+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:56:13.827+0100 INFO GET BOOK TITLE 
+2021-03-27T13:58:41.907+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:58:41.909+0100 INFO GET BOOK TITLE 
+2021-03-27T13:59:43.452+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:59:43.453+0100 INFO GET BOOK TITLE 
+2021-03-27T13:59:53.167+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T13:59:53.169+0100 INFO GET BOOK TITLE 
+2021-03-27T14:02:52.755+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:02:52.757+0100 INFO GET BOOK TITLE 
+2021-03-27T14:02:58.657+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:02:58.658+0100 INFO GET BOOK TITLE 
+2021-03-27T14:02:59.267+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:02:59.268+0100 INFO GET BOOK TITLE 
+2021-03-27T14:02:59.423+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:02:59.425+0100 INFO GET BOOK TITLE 
+2021-03-27T14:03:13.104+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:03:13.106+0100 INFO GET BOOK TITLE 
+2021-03-27T14:03:29.079+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:03:29.081+0100 INFO GET BOOK TITLE 
+2021-03-27T14:03:40.557+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:03:40.558+0100 INFO GET ALL BOOKS
+2021-03-27T14:03:41.906+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:03:41.907+0100 INFO GET BOOK TITLE 
+2021-03-27T14:03:48.499+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:03:48.500+0100 INFO GET BOOK TITLE 
+2021-03-27T14:04:37.860+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:04:37.861+0100 INFO GET ALL BOOKS
+2021-03-27T14:04:38.672+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:04:38.674+0100 INFO GET BOOK TITLE 
+2021-03-27T14:05:07.365+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:05:07.366+0100 INFO GET BOOK TITLE 
+2021-03-27T14:05:08.592+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:05:08.593+0100 INFO GET BOOK TITLE 
+2021-03-27T14:05:23.119+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:05:23.120+0100 INFO GET BOOK TITLE 
+2021-03-27T14:05:44.280+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:05:44.281+0100 INFO GET BOOK TITLE 
+2021-03-27T14:06:02.512+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:06:02.514+0100 INFO GET BOOK TITLE 
+2021-03-27T14:06:19.432+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:06:19.434+0100 INFO GET BOOK TITLE 
+2021-03-27T14:06:49.374+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:06:49.375+0100 INFO GET BOOK TITLE 
+2021-03-27T14:07:08.374+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:07:08.375+0100 INFO GET BOOK TITLE 
+2021-03-27T14:07:24.361+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:07:24.362+0100 INFO GET BOOK TITLE 
+2021-03-27T14:07:52.422+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:07:52.423+0100 INFO GET BOOK TITLE 
+2021-03-27T14:07:56.666+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:07:56.667+0100 INFO GET BOOK TITLE 
+2021-03-27T14:08:03.483+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:08:03.484+0100 INFO GET BOOK TITLE 
+2021-03-27T14:08:10.353+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:08:10.354+0100 INFO GET BOOK TITLE 
+2021-03-27T14:08:44.307+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:08:44.308+0100 INFO GET ALL BOOKS
+2021-03-27T14:08:46.363+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:08:46.364+0100 INFO GET BOOK TITLE 
+2021-03-27T14:09:39.202+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 21320 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-27T14:09:39.214+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-27T14:09:40.173+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-27T14:09:40.252+0100 INFO Finished Spring Data repository scanning in 73 ms. Found 3 JPA repository interfaces.
+2021-03-27T14:09:40.503+0100 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4c07d1fc' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:09:40.508+0100 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:09:40.706+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-27T14:09:40.714+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-27T14:09:40.715+0100 INFO Starting service [Tomcat]
+2021-03-27T14:09:40.715+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27T14:09:40.813+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-27T14:09:40.814+0100 INFO Root WebApplicationContext: initialization completed in 1543 ms
+2021-03-27T14:09:40.856+0100 INFO HikariPool-1 - Starting...
+2021-03-27T14:09:40.935+0100 INFO HikariPool-1 - Start completed.
+2021-03-27T14:09:40.942+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-27T14:09:41.038+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-27T14:09:41.073+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-27T14:09:41.179+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-27T14:09:41.275+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-27T14:09:41.739+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-27T14:09:41.745+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:09:42.056+0100 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-27T14:09:42.480+0100 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f6ba085, org.springframework.security.web.context.SecurityContextPersistenceFilter@57063e08, org.springframework.security.web.header.HeaderWriterFilter@6aed4a23, org.springframework.security.web.authentication.logout.LogoutFilter@6f986031, com.example.book.security.JwtFilter@10bcbbce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@272f5373, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35c9f527, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e1ce99c, org.springframework.security.web.session.SessionManagementFilter@7207f3c2, org.springframework.security.web.access.ExceptionTranslationFilter@20fdaf3e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@159a0f0e]
+2021-03-27T14:09:42.568+0100 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-27T14:09:42.704+0100 INFO Starting ProtocolHandler ["http-nio-8080"]
+2021-03-27T14:09:42.723+0100 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-27T14:09:42.729+0100 INFO Context refreshed
+2021-03-27T14:09:42.738+0100 INFO Found 1 custom documentation plugin(s)
+2021-03-27T14:09:42.745+0100 INFO Scanning for api listing references
+2021-03-27T14:09:42.852+0100 INFO Generating unique operation named: getAllBookUsingGET_1
+2021-03-27T14:09:42.876+0100 INFO Started BookApplication in 4.097 seconds (JVM running for 6.485)
+2021-03-27T14:09:50.759+0100 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-27T14:09:50.760+0100 INFO Initializing Servlet 'dispatcherServlet'
+2021-03-27T14:09:50.761+0100 INFO Completed initialization in 1 ms
+2021-03-27T14:09:50.776+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:09:50.806+0100 INFO GET ALL BOOKS
+2021-03-27T14:09:54.996+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:09:55.002+0100 INFO GET BOOK TITLE 
+2021-03-27T14:10:32.013+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:10:32.014+0100 INFO GET ALL BOOKS
+2021-03-27T14:10:32.704+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:10:32.705+0100 INFO GET BOOK TITLE 
+2021-03-27T14:10:45.634+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:10:45.636+0100 INFO GET BOOK TITLE 
+2021-03-27T14:17:01.471+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 12168 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-27T14:17:01.482+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-27T14:17:02.332+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-27T14:17:02.411+0100 INFO Finished Spring Data repository scanning in 71 ms. Found 3 JPA repository interfaces.
+2021-03-27T14:17:02.653+0100 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@c1e14f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:17:02.657+0100 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:17:02.848+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-27T14:17:02.856+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-27T14:17:02.856+0100 INFO Starting service [Tomcat]
+2021-03-27T14:17:02.857+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27T14:17:02.957+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-27T14:17:02.957+0100 INFO Root WebApplicationContext: initialization completed in 1420 ms
+2021-03-27T14:17:03.004+0100 INFO HikariPool-1 - Starting...
+2021-03-27T14:17:03.092+0100 INFO HikariPool-1 - Start completed.
+2021-03-27T14:17:03.097+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-27T14:17:03.198+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-27T14:17:03.238+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-27T14:17:03.337+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-27T14:17:03.436+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-27T14:17:03.916+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-27T14:17:03.926+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:17:04.192+0100 INFO Stopping service [Tomcat]
+2021-03-27T14:17:04.195+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:17:04.196+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1055)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:17:04.204+0100 INFO 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-27T14:17:04.228+0100 ERROR Application run failed
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/ideapad/Desktop/java/book/book/target/classes/data.sql]: INSERT INTO BOOK VALUES(null,true,'https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady','Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg.'); nested exception is org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "'Dziady' (BOOK: ""PUBLISHED"" INTEGER)"
+Data conversion error converting "'Dziady' (BOOK: ""PUBLISHED"" INTEGER)"; SQL statement:
+INSERT INTO BOOK VALUES(null,true,'https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady','Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg.') [22018-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.registerListeners(AbstractApplicationContext.java:881) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:580) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) [spring-boot-2.4.4.jar:2.4.4]
+	at com.example.book.BookApplication.main(BookApplication.java:10) [classes/:?]
+Caused by: org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "'Dziady' (BOOK: ""PUBLISHED"" INTEGER)"
+Data conversion error converting "'Dziady' (BOOK: ""PUBLISHED"" INTEGER)"; SQL statement:
+INSERT INTO BOOK VALUES(null,true,'https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady','Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg.') [22018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.getDataConversionError(Column.java:409) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:381) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+Caused by: org.h2.message.DbException: Błąd konwersji danych "Dziady"
+Data conversion error converting "Dziady" [22018-200]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:875) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:772) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:515) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+Caused by: org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "Dziady"
+Data conversion error converting "Dziady" [22018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:875) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:772) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:515) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+Caused by: java.lang.NumberFormatException: For input string: "Dziady"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:68) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at org.h2.value.Value.convertToInt(Value.java:982) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:806) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:772) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:515) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+2021-03-27T14:17:04.245+0100 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:17:04.245+0100 INFO HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-27T14:17:04.255+0100 INFO HikariPool-1 - Shutdown initiated...
+2021-03-27T14:17:04.257+0100 INFO HikariPool-1 - Shutdown completed.
+2021-03-27T14:17:58.702+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 13448 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-27T14:17:58.710+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-27T14:17:59.440+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-27T14:17:59.514+0100 INFO Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+2021-03-27T14:17:59.735+0100 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@50fdf44f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:17:59.738+0100 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:17:59.924+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-27T14:17:59.930+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-27T14:17:59.931+0100 INFO Starting service [Tomcat]
+2021-03-27T14:17:59.931+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27T14:18:00.016+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-27T14:18:00.016+0100 INFO Root WebApplicationContext: initialization completed in 1272 ms
+2021-03-27T14:18:00.053+0100 INFO HikariPool-1 - Starting...
+2021-03-27T14:18:00.132+0100 INFO HikariPool-1 - Start completed.
+2021-03-27T14:18:00.138+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-27T14:18:00.234+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-27T14:18:00.276+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-27T14:18:00.376+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-27T14:18:00.463+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-27T14:18:00.931+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-27T14:18:00.938+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:18:01.205+0100 INFO Stopping service [Tomcat]
+2021-03-27T14:18:01.207+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:18:01.208+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1055)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:18:01.215+0100 INFO 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-27T14:18:01.230+0100 ERROR Application run failed
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/ideapad/Desktop/java/book/book/target/classes/data.sql]: INSERT INTO BOOK VALUES(null,true,'https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady','Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów. Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg.'); nested exception is org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "'Dziady' (BOOK: ""PUBLISHED"" INTEGER)"
+Data conversion error converting "'Dziady' (BOOK: ""PUBLISHED"" INTEGER)"; SQL statement:
+INSERT INTO BOOK VALUES(null,true,'https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady','Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów. Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg.') [22018-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.registerListeners(AbstractApplicationContext.java:881) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:580) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) [spring-boot-2.4.4.jar:2.4.4]
+	at com.example.book.BookApplication.main(BookApplication.java:10) [classes/:?]
+Caused by: org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "'Dziady' (BOOK: ""PUBLISHED"" INTEGER)"
+Data conversion error converting "'Dziady' (BOOK: ""PUBLISHED"" INTEGER)"; SQL statement:
+INSERT INTO BOOK VALUES(null,true,'https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady','Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów. Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg.') [22018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.getDataConversionError(Column.java:409) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:381) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+Caused by: org.h2.message.DbException: Błąd konwersji danych "Dziady"
+Data conversion error converting "Dziady" [22018-200]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:875) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:772) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:515) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+Caused by: org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "Dziady"
+Data conversion error converting "Dziady" [22018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:875) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:772) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:515) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+Caused by: java.lang.NumberFormatException: For input string: "Dziady"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:68) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at org.h2.value.Value.convertToInt(Value.java:982) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:806) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:772) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:515) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+2021-03-27T14:18:01.254+0100 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:18:01.255+0100 INFO HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-27T14:18:01.260+0100 INFO HikariPool-1 - Shutdown initiated...
+2021-03-27T14:18:01.262+0100 INFO HikariPool-1 - Shutdown completed.
+2021-03-27T14:18:52.692+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 17384 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-27T14:18:52.701+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-27T14:18:53.522+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-27T14:18:53.589+0100 INFO Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2021-03-27T14:18:53.826+0100 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7b222230' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:18:53.831+0100 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:18:54.043+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-27T14:18:54.049+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-27T14:18:54.050+0100 INFO Starting service [Tomcat]
+2021-03-27T14:18:54.050+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27T14:18:54.139+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-27T14:18:54.139+0100 INFO Root WebApplicationContext: initialization completed in 1406 ms
+2021-03-27T14:18:54.183+0100 INFO HikariPool-1 - Starting...
+2021-03-27T14:18:54.266+0100 INFO HikariPool-1 - Start completed.
+2021-03-27T14:18:54.272+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-27T14:18:54.403+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-27T14:18:54.451+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-27T14:18:54.569+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-27T14:18:54.679+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-27T14:18:55.218+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-27T14:18:55.226+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:18:55.551+0100 INFO Stopping service [Tomcat]
+2021-03-27T14:18:55.554+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:18:55.555+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1055)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:18:55.562+0100 INFO 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-27T14:18:55.577+0100 ERROR Application run failed
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/ideapad/Desktop/java/book/book/target/classes/data.sql]: INSERT INTO BOOK VALUES(null,'Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg.',true,'https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady'); nested exception is org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "STRINGDECODE('Wydanie \""Dziad\u00f3w\"" kompletne bez skr\u00f3t\u00f3w i ci\u0119\u0107 w tre\u015bci. W tym wydaniu znajdziesz odpowiedzi na pytania z podr\u0119cznika - \""pewniak na te\u015bcie\"", czyli wskazanie zagadnie\u0144, kt\u00f3re zwykle pojawiaj\u0105 si\u0119 w pytaniach z danej lektury we wszelkich testach sprawdzaj\u0105cych wiedz\u0119, a tak\u017ce w podr\u0119cznikach i na klas\u00f3wkach. Zawiera bardzo szczeg\u00f3\u0142owe streszczenie oraz drugie skr\u00f3cone, u\u0142atwiaj\u0105ce szybkie przygotowanie si\u0119 przed lekcj\u0105. Opracowanie zawiera plan wydarze\u0144, wnikliwie wyja\u015bnion\u0105 problematyk\u0119 oraz szerokie charakterystyki bohater\u00f3w.\n\nTrwa proces student\u00f3w - filomat\u00f3w. Wile\u0144skie wi\u0119zienie jest pe\u0142ne m\u0142odych ludzi, kt\u00f3rzy otwarcie przyznaj\u0105 si\u0119 do tego, \u017ce s\u0105 Polakami. Jeden z nich, Konrad, staje si\u0119 wcieleniem niepodleg\u0142o\u015bci w\u0142asnej ojczyzny. Nadchodz\u0105 niespodziewane wydarzenia, w kt\u00f3rych wa\u017cn\u0105 rol\u0119 odegraj\u0105 si\u0142y pozaziemskie, a na ziemi po raz kolejny zetr\u0105 si\u0119 szatan i B\u00f3g.') (BOOK: ""AVAILABLE"" BOOLEAN)"
+Data conversion error converting "STRINGDECODE('Wydanie \""Dziad\u00f3w\"" kompletne bez skr\u00f3t\u00f3w i ci\u0119\u0107 w tre\u015bci. W tym wydaniu znajdziesz odpowiedzi na pytania z podr\u0119cznika - \""pewniak na te\u015bcie\"", czyli wskazanie zagadnie\u0144, kt\u00f3re zwykle pojawiaj\u0105 si\u0119 w pytaniach z danej lektury we wszelkich testach sprawdzaj\u0105cych wiedz\u0119, a tak\u017ce w podr\u0119cznikach i na klas\u00f3wkach. Zawiera bardzo szczeg\u00f3\u0142owe streszczenie oraz drugie skr\u00f3cone, u\u0142atwiaj\u0105ce szybkie przygotowanie si\u0119 przed lekcj\u0105. Opracowanie zawiera plan wydarze\u0144, wnikliwie wyja\u015bnion\u0105 problematyk\u0119 oraz szerokie charakterystyki bohater\u00f3w.\n\nTrwa proces student\u00f3w - filomat\u00f3w. Wile\u0144skie wi\u0119zienie jest pe\u0142ne m\u0142odych ludzi, kt\u00f3rzy otwarcie przyznaj\u0105 si\u0119 do tego, \u017ce s\u0105 Polakami. Jeden z nich, Konrad, staje si\u0119 wcieleniem niepodleg\u0142o\u015bci w\u0142asnej ojczyzny. Nadchodz\u0105 niespodziewane wydarzenia, w kt\u00f3rych wa\u017cn\u0105 rol\u0119 odegraj\u0105 si\u0142y pozaziemskie, a na ziemi po raz kolejny zetr\u0105 si\u0119 szatan i B\u00f3g.') (BOOK: ""AVAILABLE"" BOOLEAN)"; SQL statement:
+INSERT INTO BOOK VALUES(null,'Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg.',true,'https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady') [22018-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.registerListeners(AbstractApplicationContext.java:881) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:580) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) [spring-boot-2.4.4.jar:2.4.4]
+	at com.example.book.BookApplication.main(BookApplication.java:10) [classes/:?]
+Caused by: org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "STRINGDECODE('Wydanie \""Dziad\u00f3w\"" kompletne bez skr\u00f3t\u00f3w i ci\u0119\u0107 w tre\u015bci. W tym wydaniu znajdziesz odpowiedzi na pytania z podr\u0119cznika - \""pewniak na te\u015bcie\"", czyli wskazanie zagadnie\u0144, kt\u00f3re zwykle pojawiaj\u0105 si\u0119 w pytaniach z danej lektury we wszelkich testach sprawdzaj\u0105cych wiedz\u0119, a tak\u017ce w podr\u0119cznikach i na klas\u00f3wkach. Zawiera bardzo szczeg\u00f3\u0142owe streszczenie oraz drugie skr\u00f3cone, u\u0142atwiaj\u0105ce szybkie przygotowanie si\u0119 przed lekcj\u0105. Opracowanie zawiera plan wydarze\u0144, wnikliwie wyja\u015bnion\u0105 problematyk\u0119 oraz szerokie charakterystyki bohater\u00f3w.\n\nTrwa proces student\u00f3w - filomat\u00f3w. Wile\u0144skie wi\u0119zienie jest pe\u0142ne m\u0142odych ludzi, kt\u00f3rzy otwarcie przyznaj\u0105 si\u0119 do tego, \u017ce s\u0105 Polakami. Jeden z nich, Konrad, staje si\u0119 wcieleniem niepodleg\u0142o\u015bci w\u0142asnej ojczyzny. Nadchodz\u0105 niespodziewane wydarzenia, w kt\u00f3rych wa\u017cn\u0105 rol\u0119 odegraj\u0105 si\u0142y pozaziemskie, a na ziemi po raz kolejny zetr\u0105 si\u0119 szatan i B\u00f3g.') (BOOK: ""AVAILABLE"" BOOLEAN)"
+Data conversion error converting "STRINGDECODE('Wydanie \""Dziad\u00f3w\"" kompletne bez skr\u00f3t\u00f3w i ci\u0119\u0107 w tre\u015bci. W tym wydaniu znajdziesz odpowiedzi na pytania z podr\u0119cznika - \""pewniak na te\u015bcie\"", czyli wskazanie zagadnie\u0144, kt\u00f3re zwykle pojawiaj\u0105 si\u0119 w pytaniach z danej lektury we wszelkich testach sprawdzaj\u0105cych wiedz\u0119, a tak\u017ce w podr\u0119cznikach i na klas\u00f3wkach. Zawiera bardzo szczeg\u00f3\u0142owe streszczenie oraz drugie skr\u00f3cone, u\u0142atwiaj\u0105ce szybkie przygotowanie si\u0119 przed lekcj\u0105. Opracowanie zawiera plan wydarze\u0144, wnikliwie wyja\u015bnion\u0105 problematyk\u0119 oraz szerokie charakterystyki bohater\u00f3w.\n\nTrwa proces student\u00f3w - filomat\u00f3w. Wile\u0144skie wi\u0119zienie jest pe\u0142ne m\u0142odych ludzi, kt\u00f3rzy otwarcie przyznaj\u0105 si\u0119 do tego, \u017ce s\u0105 Polakami. Jeden z nich, Konrad, staje si\u0119 wcieleniem niepodleg\u0142o\u015bci w\u0142asnej ojczyzny. Nadchodz\u0105 niespodziewane wydarzenia, w kt\u00f3rych wa\u017cn\u0105 rol\u0119 odegraj\u0105 si\u0142y pozaziemskie, a na ziemi po raz kolejny zetr\u0105 si\u0119 szatan i B\u00f3g.') (BOOK: ""AVAILABLE"" BOOLEAN)"; SQL statement:
+INSERT INTO BOOK VALUES(null,'Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg.',true,'https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady') [22018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.getDataConversionError(Column.java:409) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:381) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+Caused by: org.h2.message.DbException: Błąd konwersji danych "Wydanie ""Dziadów"" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - ""pewniak na teście"", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg."
+Data conversion error converting "Wydanie ""Dziadów"" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - ""pewniak na teście"", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg." [22018-200]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:875) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:772) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:515) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+Caused by: org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "Wydanie ""Dziadów"" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - ""pewniak na teście"", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg."
+Data conversion error converting "Wydanie ""Dziadów"" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - ""pewniak na teście"", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg." [22018-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:875) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:772) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:515) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+Caused by: java.lang.NumberFormatException: Character array is missing "e" notation exponential mark.
+	at java.math.BigDecimal.<init>(BigDecimal.java:578) ~[?:?]
+	at java.math.BigDecimal.<init>(BigDecimal.java:402) ~[?:?]
+	at java.math.BigDecimal.<init>(BigDecimal.java:835) ~[?:?]
+	at org.h2.value.Value.convertToBoolean(Value.java:908) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:800) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.Value.convertTo(Value.java:772) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:515) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+2021-03-27T14:18:55.591+0100 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:18:55.591+0100 INFO HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-27T14:18:55.598+0100 INFO HikariPool-1 - Shutdown initiated...
+2021-03-27T14:18:55.601+0100 INFO HikariPool-1 - Shutdown completed.
+2021-03-27T14:20:21.190+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 17988 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-27T14:20:21.200+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-27T14:20:22.000+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-27T14:20:22.058+0100 INFO Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2021-03-27T14:20:22.246+0100 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@a54acec' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:20:22.251+0100 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:20:22.422+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-27T14:20:22.429+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-27T14:20:22.429+0100 INFO Starting service [Tomcat]
+2021-03-27T14:20:22.429+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27T14:20:22.513+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-27T14:20:22.513+0100 INFO Root WebApplicationContext: initialization completed in 1273 ms
+2021-03-27T14:20:22.545+0100 INFO HikariPool-1 - Starting...
+2021-03-27T14:20:22.607+0100 INFO HikariPool-1 - Start completed.
+2021-03-27T14:20:22.611+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-27T14:20:22.693+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-27T14:20:22.724+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-27T14:20:22.812+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-27T14:20:22.880+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-27T14:20:23.287+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-27T14:20:23.294+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:20:23.556+0100 INFO Stopping service [Tomcat]
+2021-03-27T14:20:23.558+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:20:23.559+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1055)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:20:23.570+0100 INFO 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-27T14:20:23.582+0100 ERROR Application run failed
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/ideapad/Desktop/java/book/book/target/classes/data.sql]: INSERT INTO BOOK VALUES(null,true,'Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg.','https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady'); nested exception is org.h2.jdbc.JdbcSQLDataException: Wartość za długa dla kolumny "DESCRIPTION VARCHAR(255)": "STRINGDECODE('Wydanie \""Dziad\u00f3w\"" kompletne bez skr\u00f3t\u00f3w i ci\u0119\u0107 w tre\u015bci. W tym wydaniu znajdziesz ... (880)"
+Value too long for column "DESCRIPTION VARCHAR(255)": "STRINGDECODE('Wydanie \""Dziad\u00f3w\"" kompletne bez skr\u00f3t\u00f3w i ci\u0119\u0107 w tre\u015bci. W tym wydaniu znajdziesz ... (880)"; SQL statement:
+INSERT INTO BOOK VALUES(null,true,'Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg.','https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady') [22001-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.registerListeners(AbstractApplicationContext.java:881) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:580) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) [spring-boot-2.4.4.jar:2.4.4]
+	at com.example.book.BookApplication.main(BookApplication.java:10) [classes/:?]
+Caused by: org.h2.jdbc.JdbcSQLDataException: Wartość za długa dla kolumny "DESCRIPTION VARCHAR(255)": "STRINGDECODE('Wydanie \""Dziad\u00f3w\"" kompletne bez skr\u00f3t\u00f3w i ci\u0119\u0107 w tre\u015bci. W tym wydaniu znajdziesz ... (880)"
+Value too long for column "DESCRIPTION VARCHAR(255)": "STRINGDECODE('Wydanie \""Dziad\u00f3w\"" kompletne bez skr\u00f3t\u00f3w i ci\u0119\u0107 w tre\u015bci. W tym wydaniu znajdziesz ... (880)"; SQL statement:
+INSERT INTO BOOK VALUES(null,true,'Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.
+
+Trwa proces studentów - filomatów. Wileńskie więzienie jest pełne młodych ludzi, którzy otwarcie przyznają się do tego, że są Polakami. Jeden z nich, Konrad, staje się wcieleniem niepodległości własnej ojczyzny. Nadchodzą niespodziewane wydarzenia, w których ważną rolę odegrają siły pozaziemskie, a na ziemi po raz kolejny zetrą się szatan i Bóg.','https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady') [22001-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.getValueTooLongException(TypeInfo.java:535) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:520) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+2021-03-27T14:20:23.592+0100 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:20:23.592+0100 INFO HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-27T14:20:23.597+0100 INFO HikariPool-1 - Shutdown initiated...
+2021-03-27T14:20:23.600+0100 INFO HikariPool-1 - Shutdown completed.
+2021-03-27T14:21:00.419+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 14020 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-27T14:21:00.432+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-27T14:21:01.211+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-27T14:21:01.276+0100 INFO Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2021-03-27T14:21:01.501+0100 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@172f4514' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:21:01.507+0100 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:21:01.769+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-27T14:21:01.775+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-27T14:21:01.776+0100 INFO Starting service [Tomcat]
+2021-03-27T14:21:01.777+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27T14:21:01.867+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-27T14:21:01.867+0100 INFO Root WebApplicationContext: initialization completed in 1384 ms
+2021-03-27T14:21:01.909+0100 INFO HikariPool-1 - Starting...
+2021-03-27T14:21:01.988+0100 INFO HikariPool-1 - Start completed.
+2021-03-27T14:21:01.992+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-27T14:21:02.081+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-27T14:21:02.117+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-27T14:21:02.206+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-27T14:21:02.301+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-27T14:21:02.808+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-27T14:21:02.818+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:21:03.095+0100 INFO Stopping service [Tomcat]
+2021-03-27T14:21:03.098+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:21:03.099+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1055)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:21:03.105+0100 INFO 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-27T14:21:03.119+0100 ERROR Application run failed
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/C:/Users/ideapad/Desktop/java/book/book/target/classes/data.sql]: INSERT INTO BOOK VALUES(null,true,'Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.','https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady'); nested exception is org.h2.jdbc.JdbcSQLDataException: Wartość za długa dla kolumny "DESCRIPTION VARCHAR(255)": "STRINGDECODE('Wydanie \""Dziad\u00f3w\"" kompletne bez skr\u00f3t\u00f3w i ci\u0119\u0107 w tre\u015bci. W tym wydaniu znajdziesz ... (531)"
+Value too long for column "DESCRIPTION VARCHAR(255)": "STRINGDECODE('Wydanie \""Dziad\u00f3w\"" kompletne bez skr\u00f3t\u00f3w i ci\u0119\u0107 w tre\u015bci. W tym wydaniu znajdziesz ... (531)"; SQL statement:
+INSERT INTO BOOK VALUES(null,true,'Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.','https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady') [22001-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.registerListeners(AbstractApplicationContext.java:881) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:580) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) [spring-boot-2.4.4.jar:2.4.4]
+	at com.example.book.BookApplication.main(BookApplication.java:10) [classes/:?]
+Caused by: org.h2.jdbc.JdbcSQLDataException: Wartość za długa dla kolumny "DESCRIPTION VARCHAR(255)": "STRINGDECODE('Wydanie \""Dziad\u00f3w\"" kompletne bez skr\u00f3t\u00f3w i ci\u0119\u0107 w tre\u015bci. W tym wydaniu znajdziesz ... (531)"
+Value too long for column "DESCRIPTION VARCHAR(255)": "STRINGDECODE('Wydanie \""Dziad\u00f3w\"" kompletne bez skr\u00f3t\u00f3w i ci\u0119\u0107 w tre\u015bci. W tym wydaniu znajdziesz ... (531)"; SQL statement:
+INSERT INTO BOOK VALUES(null,true,'Wydanie "Dziadów" kompletne bez skrótów i cięć w treści. W tym wydaniu znajdziesz odpowiedzi na pytania z podręcznika - "pewniak na teście", czyli wskazanie zagadnień, które zwykle pojawiają się w pytaniach z danej lektury we wszelkich testach sprawdzających wiedzę, a także w podręcznikach i na klasówkach. Zawiera bardzo szczegółowe streszczenie oraz drugie skrócone, ułatwiające szybkie przygotowanie się przed lekcją. Opracowanie zawiera plan wydarzeń, wnikliwie wyjaśnioną problematykę oraz szerokie charakterystyki bohaterów.','https://ecsmedia.pl/c/dziady-w-iext39528243.jpg',1832,'Dziady') [22001-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.getValueTooLongException(TypeInfo.java:535) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:520) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+2021-03-27T14:21:03.132+0100 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:21:03.132+0100 INFO HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-27T14:21:03.137+0100 INFO HikariPool-1 - Shutdown initiated...
+2021-03-27T14:21:03.139+0100 INFO HikariPool-1 - Shutdown completed.
+2021-03-27T14:22:17.044+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 4124 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-27T14:22:17.052+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-27T14:22:17.683+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-27T14:22:17.742+0100 INFO Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2021-03-27T14:22:17.935+0100 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@653fb8d1' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:22:17.940+0100 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:22:18.105+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-27T14:22:18.112+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-27T14:22:18.112+0100 INFO Starting service [Tomcat]
+2021-03-27T14:22:18.112+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27T14:22:18.194+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-27T14:22:18.194+0100 INFO Root WebApplicationContext: initialization completed in 1109 ms
+2021-03-27T14:22:18.228+0100 INFO HikariPool-1 - Starting...
+2021-03-27T14:22:18.300+0100 INFO HikariPool-1 - Start completed.
+2021-03-27T14:22:18.305+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-27T14:22:18.404+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-27T14:22:18.438+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-27T14:22:18.527+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-27T14:22:18.607+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-27T14:22:19.050+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-27T14:22:19.056+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:22:19.298+0100 INFO Stopping service [Tomcat]
+2021-03-27T14:22:19.302+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:22:19.303+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1055)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:22:19.310+0100 INFO 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-27T14:22:19.324+0100 ERROR Application run failed
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of URL [file:/C:/Users/ideapad/Desktop/java/book/book/target/classes/data.sql]: INSERT INTO BOOK VALUES(null,true,'https://www.greg.pl/imgs/covers/380/Pan-Tadeusz_lkpt.jpg',1834,'Pan Tadeusz'); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Niezgodna ilość kolumn
+Column count does not match; SQL statement:
+INSERT INTO BOOK VALUES(null,true,'https://www.greg.pl/imgs/covers/380/Pan-Tadeusz_lkpt.jpg',1834,'Pan Tadeusz') [21002-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.registerListeners(AbstractApplicationContext.java:881) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:580) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) [spring-boot-2.4.4.jar:2.4.4]
+	at com.example.book.BookApplication.main(BookApplication.java:10) [classes/:?]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Niezgodna ilość kolumn
+Column count does not match; SQL statement:
+INSERT INTO BOOK VALUES(null,true,'https://www.greg.pl/imgs/covers/380/Pan-Tadeusz_lkpt.jpg',1834,'Pan Tadeusz') [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.prepare(Insert.java:319) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:744) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+2021-03-27T14:22:19.336+0100 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:22:19.336+0100 INFO HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-27T14:22:19.345+0100 INFO HikariPool-1 - Shutdown initiated...
+2021-03-27T14:22:19.347+0100 INFO HikariPool-1 - Shutdown completed.
+2021-03-27T14:22:29.274+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 3988 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-27T14:22:29.284+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-27T14:22:29.966+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-27T14:22:30.047+0100 INFO Finished Spring Data repository scanning in 75 ms. Found 3 JPA repository interfaces.
+2021-03-27T14:22:30.311+0100 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@19da993b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:22:30.315+0100 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:22:30.515+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-27T14:22:30.524+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-27T14:22:30.525+0100 INFO Starting service [Tomcat]
+2021-03-27T14:22:30.525+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27T14:22:30.608+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-27T14:22:30.608+0100 INFO Root WebApplicationContext: initialization completed in 1285 ms
+2021-03-27T14:22:30.640+0100 INFO HikariPool-1 - Starting...
+2021-03-27T14:22:30.706+0100 INFO HikariPool-1 - Start completed.
+2021-03-27T14:22:30.710+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-27T14:22:30.792+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-27T14:22:30.823+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-27T14:22:30.909+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-27T14:22:30.976+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-27T14:22:31.397+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-27T14:22:31.403+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:22:31.645+0100 INFO Stopping service [Tomcat]
+2021-03-27T14:22:31.649+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:22:31.650+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1055)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:22:31.657+0100 INFO 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-27T14:22:31.670+0100 ERROR Application run failed
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of URL [file:/C:/Users/ideapad/Desktop/java/book/book/target/classes/data.sql]: INSERT INTO BOOK VALUES(null,true,'https://www.greg.pl/imgs/covers/380/Pan-Tadeusz_lkpt.jpg',1834,'Pan Tadeusz'); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Niezgodna ilość kolumn
+Column count does not match; SQL statement:
+INSERT INTO BOOK VALUES(null,true,'https://www.greg.pl/imgs/covers/380/Pan-Tadeusz_lkpt.jpg',1834,'Pan Tadeusz') [21002-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.registerListeners(AbstractApplicationContext.java:881) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:580) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) [spring-boot-2.4.4.jar:2.4.4]
+	at com.example.book.BookApplication.main(BookApplication.java:10) [classes/:?]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Niezgodna ilość kolumn
+Column count does not match; SQL statement:
+INSERT INTO BOOK VALUES(null,true,'https://www.greg.pl/imgs/covers/380/Pan-Tadeusz_lkpt.jpg',1834,'Pan Tadeusz') [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.prepare(Insert.java:319) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:744) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+2021-03-27T14:22:31.680+0100 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:22:31.680+0100 INFO HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-27T14:22:31.687+0100 INFO HikariPool-1 - Shutdown initiated...
+2021-03-27T14:22:31.689+0100 INFO HikariPool-1 - Shutdown completed.
+2021-03-27T14:29:36.486+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 1376 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-27T14:29:36.494+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-27T14:29:37.310+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-27T14:29:37.388+0100 INFO Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+2021-03-27T14:29:37.717+0100 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@415a3f6a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:29:37.731+0100 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:29:37.957+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-27T14:29:37.964+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-27T14:29:37.965+0100 INFO Starting service [Tomcat]
+2021-03-27T14:29:37.965+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27T14:29:38.043+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-27T14:29:38.044+0100 INFO Root WebApplicationContext: initialization completed in 1515 ms
+2021-03-27T14:29:38.084+0100 INFO HikariPool-1 - Starting...
+2021-03-27T14:29:38.168+0100 INFO HikariPool-1 - Start completed.
+2021-03-27T14:29:38.172+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-27T14:29:38.283+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-27T14:29:38.319+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-27T14:29:38.417+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-27T14:29:38.489+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-27T14:29:38.938+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-27T14:29:38.944+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:29:39.196+0100 INFO Stopping service [Tomcat]
+2021-03-27T14:29:39.200+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:29:39.202+0100 WARN The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.1/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1055)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.1/java.lang.Thread.run(Thread.java:832)
+2021-03-27T14:29:39.210+0100 INFO 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-27T14:29:39.223+0100 ERROR Application run failed
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #10 of URL [file:/C:/Users/ideapad/Desktop/java/book/book/target/classes/data.sql]: INSERT INTO BOOK VALUES(null,true,,'Od ponad stu lat historia niezwykłej miłości młodego patrycjusza rzymskiego i pięknej zakładniczki chrześcijanki wzrusza i fascynuje kolejne pokolenia czytelników. Trzymająca w napięciu akcja oraz wspaniały w swej wyrazistości i barwności obraz Rzymu za czasów Nerona.Wydanie z opracowaniem.','https://ecsmedia.pl/c/quo-vadis-b-iext39255599.jpg',1896,'Quo vadis'); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "INSERT INTO BOOK VALUES(NULL,TRUE,,[*]'Od ponad stu lat historia niezwykłej miłości młodego patrycjusza rzymskiego i pięknej zakładniczki chrześcijanki wzrusza i fascynuje kolejne pokolenia czytelników. Trzymająca w napięciu akcja oraz wspaniały w swej wyrazistości i barwności obraz Rzymu za czasów Nerona.Wydanie z opracowaniem.','https://ecsmedia.pl/c/quo-vadis-b-iext39255599.jpg',1896,'Quo vadis')"; oczekiwano "DEFAULT, NOT, EXISTS, INTERSECTS, UNIQUE"
+Syntax error in SQL statement "INSERT INTO BOOK VALUES(NULL,TRUE,,[*]'Od ponad stu lat historia niezwykłej miłości młodego patrycjusza rzymskiego i pięknej zakładniczki chrześcijanki wzrusza i fascynuje kolejne pokolenia czytelników. Trzymająca w napięciu akcja oraz wspaniały w swej wyrazistości i barwności obraz Rzymu za czasów Nerona.Wydanie z opracowaniem.','https://ecsmedia.pl/c/quo-vadis-b-iext39255599.jpg',1896,'Quo vadis')"; expected "DEFAULT, NOT, EXISTS, INTERSECTS, UNIQUE"; SQL statement:
+INSERT INTO BOOK VALUES(null,true,,'Od ponad stu lat historia niezwykłej miłości młodego patrycjusza rzymskiego i pięknej zakładniczki chrześcijanki wzrusza i fascynuje kolejne pokolenia czytelników. Trzymająca w napięciu akcja oraz wspaniały w swej wyrazistości i barwności obraz Rzymu za czasów Nerona.Wydanie z opracowaniem.','https://ecsmedia.pl/c/quo-vadis-b-iext39255599.jpg',1896,'Quo vadis') [42001-200]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:622) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:49) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:202) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:119) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:91) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:38) ~[spring-boot-autoconfigure-2.4.4.jar:2.4.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.registerListeners(AbstractApplicationContext.java:881) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:580) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) [spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) [spring-boot-2.4.4.jar:2.4.4]
+	at com.example.book.BookApplication.main(BookApplication.java:10) [classes/:?]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "INSERT INTO BOOK VALUES(NULL,TRUE,,[*]'Od ponad stu lat historia niezwykłej miłości młodego patrycjusza rzymskiego i pięknej zakładniczki chrześcijanki wzrusza i fascynuje kolejne pokolenia czytelników. Trzymająca w napięciu akcja oraz wspaniały w swej wyrazistości i barwności obraz Rzymu za czasów Nerona.Wydanie z opracowaniem.','https://ecsmedia.pl/c/quo-vadis-b-iext39255599.jpg',1896,'Quo vadis')"; oczekiwano "DEFAULT, NOT, EXISTS, INTERSECTS, UNIQUE"
+Syntax error in SQL statement "INSERT INTO BOOK VALUES(NULL,TRUE,,[*]'Od ponad stu lat historia niezwykłej miłości młodego patrycjusza rzymskiego i pięknej zakładniczki chrześcijanki wzrusza i fascynuje kolejne pokolenia czytelników. Trzymająca w napięciu akcja oraz wspaniały w swej wyrazistości i barwności obraz Rzymu za czasów Nerona.Wydanie z opracowaniem.','https://ecsmedia.pl/c/quo-vadis-b-iext39255599.jpg',1896,'Quo vadis')"; expected "DEFAULT, NOT, EXISTS, INTERSECTS, UNIQUE"; SQL statement:
+INSERT INTO BOOK VALUES(null,true,,'Od ponad stu lat historia niezwykłej miłości młodego patrycjusza rzymskiego i pięknej zakładniczki chrześcijanki wzrusza i fascynuje kolejne pokolenia czytelników. Trzymająca w napięciu akcja oraz wspaniały w swej wyrazistości i barwności obraz Rzymu za czasów Nerona.Wydanie z opracowaniem.','https://ecsmedia.pl/c/quo-vadis-b-iext39255599.jpg',1896,'Quo vadis') [42001-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getSyntaxError(DbException.java:243) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.getSyntaxError(Parser.java:1053) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTerm(Parser.java:4479) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readFactor(Parser.java:3343) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readSum(Parser.java:3330) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readConcat(Parser.java:3305) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readCondition(Parser.java:3108) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readExpression(Parser.java:3059) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseValuesForCommand(Parser.java:1877) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1817) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseInsert(Parser.java:1749) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:954) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:819) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:601) ~[spring-jdbc-5.3.5.jar:5.3.5]
+	... 20 more
+2021-03-27T14:29:39.238+0100 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:29:39.238+0100 INFO HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-03-27T14:29:39.246+0100 INFO HikariPool-1 - Shutdown initiated...
+2021-03-27T14:29:39.248+0100 INFO HikariPool-1 - Shutdown completed.
+2021-03-27T14:30:44.509+0100 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 15064 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-27T14:30:44.522+0100 INFO No active profile set, falling back to default profiles: default
+2021-03-27T14:30:45.243+0100 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-27T14:30:45.308+0100 INFO Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+2021-03-27T14:30:45.518+0100 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1e1237ab' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:30:45.523+0100 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-27T14:30:45.702+0100 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-27T14:30:45.708+0100 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-27T14:30:45.709+0100 INFO Starting service [Tomcat]
+2021-03-27T14:30:45.709+0100 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-27T14:30:45.792+0100 INFO Initializing Spring embedded WebApplicationContext
+2021-03-27T14:30:45.793+0100 INFO Root WebApplicationContext: initialization completed in 1229 ms
+2021-03-27T14:30:45.827+0100 INFO HikariPool-1 - Starting...
+2021-03-27T14:30:45.902+0100 INFO HikariPool-1 - Start completed.
+2021-03-27T14:30:45.905+0100 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-27T14:30:46.004+0100 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-27T14:30:46.036+0100 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-27T14:30:46.119+0100 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-27T14:30:46.204+0100 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-27T14:30:46.664+0100 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-27T14:30:46.671+0100 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-27T14:30:46.971+0100 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-27T14:30:47.415+0100 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30cb489a, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bf70600, org.springframework.security.web.header.HeaderWriterFilter@4a467ada, org.springframework.security.web.authentication.logout.LogoutFilter@743b7025, com.example.book.security.JwtFilter@4965454c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57a0aeb8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c955487, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@401d83ce, org.springframework.security.web.session.SessionManagementFilter@4645a575, org.springframework.security.web.access.ExceptionTranslationFilter@61627c9d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7866fe3e]
+2021-03-27T14:30:47.491+0100 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-27T14:30:47.614+0100 INFO Starting ProtocolHandler ["http-nio-8080"]
+2021-03-27T14:30:47.634+0100 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-27T14:30:47.640+0100 INFO Context refreshed
+2021-03-27T14:30:47.649+0100 INFO Found 1 custom documentation plugin(s)
+2021-03-27T14:30:47.655+0100 INFO Scanning for api listing references
+2021-03-27T14:30:47.750+0100 INFO Generating unique operation named: getAllBookUsingGET_1
+2021-03-27T14:30:47.770+0100 INFO Started BookApplication in 3.63 seconds (JVM running for 4.679)
+2021-03-27T14:30:52.592+0100 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-27T14:30:52.592+0100 INFO Initializing Servlet 'dispatcherServlet'
+2021-03-27T14:30:52.594+0100 INFO Completed initialization in 2 ms
+2021-03-27T14:30:52.605+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:30:52.630+0100 INFO GET BOOK TITLE 
+2021-03-27T14:32:04.054+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:32:04.056+0100 INFO GET BOOK TITLE 
+2021-03-27T14:32:18.807+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:32:18.809+0100 INFO GET BOOK TITLE 
+2021-03-27T14:32:35.942+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:32:35.943+0100 INFO GET BOOK TITLE 
+2021-03-27T14:32:54.096+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:32:54.098+0100 INFO GET BOOK TITLE 
+2021-03-27T14:32:59.893+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:32:59.894+0100 INFO GET BOOK TITLE 
+2021-03-27T14:33:09.516+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:33:09.518+0100 INFO GET BOOK TITLE 
+2021-03-27T14:33:13.860+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:33:13.861+0100 INFO GET ALL BOOKS
+2021-03-27T14:33:14.843+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:33:14.845+0100 INFO GET BOOK TITLE 
+2021-03-27T14:33:27.832+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:33:27.834+0100 INFO GET BOOK TITLE 
+2021-03-27T14:33:31.948+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:33:31.950+0100 INFO GET BOOK TITLE 
+2021-03-27T14:33:34.578+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:33:34.579+0100 INFO GET BOOK TITLE 
+2021-03-27T14:33:39.973+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:33:39.975+0100 INFO GET BOOK TITLE 
+2021-03-27T14:33:48.449+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:33:48.450+0100 INFO GET BOOK TITLE 
+2021-03-27T14:33:50.880+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:33:50.881+0100 INFO GET BOOK TITLE 
+2021-03-27T14:33:57.840+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:33:57.842+0100 INFO GET BOOK TITLE 
+2021-03-27T14:34:07.998+0100 WARN JWT Token does not begin with Bearer String
+2021-03-27T14:34:07.999+0100 INFO GET BOOK TITLE 

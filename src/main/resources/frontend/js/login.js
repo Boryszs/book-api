@@ -10,6 +10,9 @@ function validate(){
         dataType: "json",
         success: function(data) {
             console.log(data.jwt_token);
+        },
+        error:function (xhr) {
+            console.log("error");
         }
     });
 }

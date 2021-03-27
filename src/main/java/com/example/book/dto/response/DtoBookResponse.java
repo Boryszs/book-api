@@ -20,6 +20,8 @@ public class DtoBookResponse implements Serializable {
 
     private String image;
 
+    private String description;
+
     private Boolean available;
 
     private List<DtoAuthorsResponse> author;
