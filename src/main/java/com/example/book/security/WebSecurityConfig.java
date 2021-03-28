@@ -14,9 +14,11 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @Configuration
 @EnableWebSecurity
+@CrossOrigin
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
 
@@ -46,10 +48,11 @@ public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
         return super.authenticationManagerBean();
     }
 
+
     protected void configure(HttpSecurity httpSecurity) throws Exception {
 
-        httpSecurity.csrf().disable()
-                .authorizeRequests().antMatchers("/user/*","/book/*","/book","/h2-console/*").permitAll().
+        httpSecurity.cors().and().csrf().disable()
+                .authorizeRequests().antMatchers("/user/*","/h2-console/*").permitAll().
                         anyRequest().authenticated().and().
                         exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntry).and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);

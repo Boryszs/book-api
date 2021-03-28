@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Detail</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -13,29 +14,56 @@
         let param = searchParams.get('id')
 
         $.ajax({
-            url: "http://127.0.0.1:8080/book/"+param,
+            url: "http://192.168.1.109:8080/book/" + param,
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json',
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Authorization':'Bearer '+ Cookies.get("token"),
+            },
             type: "get",
             success: function (response) {
                 console.log(response)
-                let html='<strong>Autorzy: </strong>';
+                let html = '<strong>Autorzy: </strong>';
                 $.each(response.author, function (i, item) {
-                    html+="<p>"+item.name+' '+item.surname+"</p>"
+                    html += "<p>" + item.name + ' ' + item.surname + "</p>"
                 });
 
-                $('#img').html("<img src="+response.image+" width='250' >");
-                let av = response.available ? "<font color='green'>Dostępny</font>" : "<font color='red'>Niedotępny</font>";
-                $('#data').html("<h2><strong>"+response.title+"</strong></h2> <p> <strong>Wydanie: </strong>"+response.published+"</p><p><strong>Dostępność: </strong>"+av+"</p>"+html+"<p><strong>Opis:<br></strong>"+response.description+"</p>");
+                $('#img').html("<img src=" + response.image + " width='250' >");
+                let av = response.available ? "<strong><font color='#008000'>Dostępny</font></strong>" : "<strong><font color='red'>Niedotępny</font></strong>";
+                $('#data').html("<h2><strong>" + response.title + "</strong></h2> <p> <strong>Wydanie: </strong>" + response.published + "</p><p><strong>Dostępność: </strong>" + av + "</p>" + html + "<p><strong>Opis:<br></strong>" + response.description + "</p>");
             },
             error: function (xhr) {
                 console.log("error");
             }
         });
+
+        function logOut(){
+            Cookies.remove('token');
+            window.location.href = 'login.html';
+        }
     </script>
 </head>
-<body>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="books.html">Home</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <button type="button" class="btn btn-light" onclick="logOut()">Log out</button>
+        </form>
+    </div>
+</nav>
 <div class="container">
     <div class="row">
-        <div class="col-sm-4" id="img" >
+        <div class="col-sm-4" id="img">
         </div>
         <div class="col-sm-8" id="data">
         </div>

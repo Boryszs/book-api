@@ -2,6 +2,7 @@ package com.example.book.security;
 
 import com.example.book.service.impl.JwtUserServiceImpl;
 import io.jsonwebtoken.ExpiredJwtException;
+import io.jsonwebtoken.MalformedJwtException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -42,6 +43,8 @@ public class JwtFilter extends OncePerRequestFilter {
                 System.out.println("Unable to get JWT Token");
             } catch (ExpiredJwtException e) {
                 System.out.println("JWT Token has expired");
+            }catch (MalformedJwtException e){
+                System.out.println("Empty Authoritation on Header");
             }
         } else {
             logger.warn("JWT Token does not begin with Bearer String");

@@ -3,38 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Books</title>
     <script type="text/javascript">
-            $.ajax({
-                url: "http://127.0.0.1:8080/book",
-                type: "get", //send it through get method
-                success: function (response) {
-                    let trHTML = '';
-                    $.each(response, function (i, item) {
-                        trHTML += '<tr onclick="goToDetails('+item.id+')"><td class="align-middle font-weight-bold">' + item.title + '</td><td class="align-middle">' + item.published + '</td><td class="align-middle">' + "<img src="+item.image+" width='50' >" + '</td></tr>';
-                    });
-                    $('#records_table').append(trHTML);
-                },
-                error: function (xhr) {
-                    console.log("error");
-                }
-            });
-
-            function goToDetails(id) {
-                window.location.href='detail-book.html?id='+id;
+        console.log(Cookies.get("token"));
+        $.ajax({
+            url: "http://192.168.1.109:8080/book",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + Cookies.get("token"),
+            },
+            type: "get",
+            success: function (response) {
+                let trHTML = '';
+                $.each(response, function (i, item) {
+                    trHTML += '<tr onclick="goToDetails(' + item.id + ')"><td class="align-middle text-right">' + "<img src=" + item.image + " width='80' >" + '<td class="align-middle text-left font-weight-bold">' + item.title + '</td></tr>';
+                });
+                $('#records_table').append(trHTML);
+            },
+            error: function (xhr) {
+                console.log(xhr);
             }
+        });
+
+        function goToDetails(id) {
+            window.location.href = 'detail-book.html?id=' + id;
+        }
+
+        function logOut(){
+            Cookies.remove('token');
+            window.location.href = 'login.html';
+        }
 
     </script>
 </head>
-<body>
-<table id="records_table" class="center table text-center align-bottom">
-    <tr>
-        <th>Title</th>
-        <th>Published</th>
-        <th>Image</th>
-    </tr>
-</table>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="books.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <button type="button" class="btn btn-light" onclick="logOut()">Log out</button>
+        </form>
+    </div>
+</nav>
+<div class="bg-light">
+    <table id="records_table" class="center table table-hover text-center align-bottom">
+    </table>
+</div>
+
 </body>
 </html>
