@@ -8,7 +8,7 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Books</title>
     <script type="text/javascript">
-        console.log(Cookies.get("token"));
+
         $.ajax({
             url: "http://192.168.1.109:8080/book",
             headers: {
@@ -18,11 +18,12 @@
             },
             type: "get",
             success: function (response) {
-                let trHTML = '';
+                let html = '';
                 $.each(response, function (i, item) {
-                    trHTML += '<tr onclick="goToDetails(' + item.id + ')"><td class="align-middle text-right">' + "<img src=" + item.image + " width='80' >" + '<td class="align-middle text-left font-weight-bold">' + item.title + '</td></tr>';
+                    let av = item.available ? '':"<strong><font color='red' size='2px'>*Niedostępna</font></strong>";
+                    html += '<tr onclick="goToDetails(' + item.id + ')"><td class="align-middle text-right">' + "<img src=" + item.image + " width='80' >" + '<td class="align-middle text-left font-weight-bold">' + item.title + '</td><td class="text-left">'+av+'</td></tr>';
                 });
-                $('#records_table').append(trHTML);
+                $('#records_table').append(html);
             },
             error: function (xhr) {
                 console.log(xhr);
@@ -35,6 +36,7 @@
 
         function logOut(){
             Cookies.remove('token');
+            Cookies.remove('id');
             window.location.href = 'login.html';
         }
 
@@ -49,7 +51,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="books.html">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="books.html">Książki<span class="sr-only">(current)</span></a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
