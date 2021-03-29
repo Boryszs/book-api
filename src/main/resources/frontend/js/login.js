@@ -11,7 +11,6 @@ function validate() {
 
             Cookies.set("token",data.jwt_token, {sameSite: 'strict' },{ expires: 7, path: '' },{secure:true});
             Cookies.set("id",data.id, {sameSite: 'strict' },{ expires: 7, path: '' },{secure:true});
-            console.log(Cookies.get("token"));
             window.location.href = 'books.html';
         },
         error: function (xhr) {
