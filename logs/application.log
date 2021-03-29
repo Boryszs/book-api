@@ -1,0 +1,76 @@
+2021-03-29T18:31:37.642+0200 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 19084 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-29T18:31:37.642+0200 INFO No active profile set, falling back to default profiles: default
+2021-03-29T18:31:38.335+0200 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29T18:31:38.405+0200 INFO Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+2021-03-29T18:31:38.634+0200 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4f7be6c8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-29T18:31:38.642+0200 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-29T18:31:38.805+0200 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-29T18:31:38.821+0200 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29T18:31:38.821+0200 INFO Starting service [Tomcat]
+2021-03-29T18:31:38.821+0200 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29T18:31:38.890+0200 INFO Initializing Spring embedded WebApplicationContext
+2021-03-29T18:31:38.890+0200 INFO Root WebApplicationContext: initialization completed in 1203 ms
+2021-03-29T18:31:38.921+0200 INFO HikariPool-1 - Starting...
+2021-03-29T18:31:39.006+0200 INFO HikariPool-1 - Start completed.
+2021-03-29T18:31:39.006+0200 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-29T18:31:39.117+0200 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29T18:31:39.160+0200 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-29T18:31:39.244+0200 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29T18:31:39.323+0200 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-29T18:31:39.792+0200 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29T18:31:39.808+0200 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29T18:31:40.120+0200 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29T18:31:40.607+0200 INFO Will secure Ant [pattern='/h2-console/**'] with []
+2021-03-29T18:31:40.705+0200 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b312863, org.springframework.security.web.context.SecurityContextPersistenceFilter@796a7c9, org.springframework.security.web.header.HeaderWriterFilter@1ece052b, org.springframework.web.filter.CorsFilter@1cf7c055, org.springframework.security.web.authentication.logout.LogoutFilter@4138af7, com.example.book.security.JwtFilter@46eb2260, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@452a32f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b69ff13, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b6fc231, org.springframework.security.web.session.SessionManagementFilter@70fe33fa, org.springframework.security.web.access.ExceptionTranslationFilter@2330c995, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4010f232]
+2021-03-29T18:31:40.748+0200 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29T18:31:40.854+0200 INFO Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29T18:31:40.870+0200 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29T18:31:40.886+0200 INFO Context refreshed
+2021-03-29T18:31:40.886+0200 INFO Found 1 custom documentation plugin(s)
+2021-03-29T18:31:40.901+0200 INFO Scanning for api listing references
+2021-03-29T18:31:41.011+0200 INFO Generating unique operation named: getAllBookUsingGET_1
+2021-03-29T18:31:41.038+0200 INFO Started BookApplication in 3.668 seconds (JVM running for 4.647)
+2021-03-29T18:31:49.087+0200 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29T18:31:49.087+0200 INFO Initializing Servlet 'dispatcherServlet'
+2021-03-29T18:31:49.089+0200 INFO Completed initialization in 1 ms
+2021-03-29T18:31:49.104+0200 WARN JWT Token does not begin with Bearer String
+2021-03-29T18:32:23.775+0200 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 1400 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-03-29T18:32:23.783+0200 INFO No active profile set, falling back to default profiles: default
+2021-03-29T18:32:24.564+0200 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29T18:32:24.634+0200 INFO Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
+2021-03-29T18:32:24.926+0200 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1320e68a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-29T18:32:24.933+0200 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-29T18:32:25.182+0200 INFO Tomcat initialized with port(s): 8080 (http)
+2021-03-29T18:32:25.195+0200 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29T18:32:25.196+0200 INFO Starting service [Tomcat]
+2021-03-29T18:32:25.197+0200 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29T18:32:25.310+0200 INFO Initializing Spring embedded WebApplicationContext
+2021-03-29T18:32:25.310+0200 INFO Root WebApplicationContext: initialization completed in 1479 ms
+2021-03-29T18:32:25.359+0200 INFO HikariPool-1 - Starting...
+2021-03-29T18:32:25.455+0200 INFO HikariPool-1 - Start completed.
+2021-03-29T18:32:25.463+0200 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-03-29T18:32:25.603+0200 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29T18:32:25.640+0200 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-29T18:32:25.723+0200 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29T18:32:25.812+0200 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-03-29T18:32:26.308+0200 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29T18:32:26.316+0200 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29T18:32:26.633+0200 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29T18:32:27.077+0200 INFO Will secure Ant [pattern='/h2-console/**'] with []
+2021-03-29T18:32:27.174+0200 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5cbebfba, org.springframework.security.web.context.SecurityContextPersistenceFilter@387ef6a7, org.springframework.security.web.header.HeaderWriterFilter@4f63909f, org.springframework.web.filter.CorsFilter@66ce4b4, org.springframework.security.web.authentication.logout.LogoutFilter@51ac72f7, com.example.book.security.JwtFilter@7e017f47, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d086485, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@294b045b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58df2864, org.springframework.security.web.session.SessionManagementFilter@65b07b9, org.springframework.security.web.access.ExceptionTranslationFilter@93c66ef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@288e50c1]
+2021-03-29T18:32:27.206+0200 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29T18:32:27.309+0200 INFO Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29T18:32:27.324+0200 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29T18:32:27.324+0200 INFO Context refreshed
+2021-03-29T18:32:27.340+0200 INFO Found 1 custom documentation plugin(s)
+2021-03-29T18:32:27.343+0200 INFO Scanning for api listing references
+2021-03-29T18:32:27.444+0200 INFO Generating unique operation named: getAllBookUsingGET_1
+2021-03-29T18:32:27.459+0200 INFO Started BookApplication in 3.985 seconds (JVM running for 4.958)
+2021-03-29T18:32:29.597+0200 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29T18:32:29.598+0200 INFO Initializing Servlet 'dispatcherServlet'
+2021-03-29T18:32:29.598+0200 INFO Completed initialization in 0 ms
+2021-03-29T18:32:29.611+0200 WARN JWT Token does not begin with Bearer String
+2021-03-29T18:32:34.471+0200 INFO ADD RESERVATIONDtoReservationRequest(userId=1, dataFrom=Mon Mar 29 02:00:00 CEST 2021, dataTo=Tue Mar 30 02:00:00 CEST 2021, bookId=1)
+2021-03-29T18:32:37.913+0200 INFO ADD RESERVATIONDtoReservationRequest(userId=1, dataFrom=Mon Mar 29 02:00:00 CEST 2021, dataTo=Tue Mar 30 02:00:00 CEST 2021, bookId=4)
+2021-03-29T18:32:46.357+0200 INFO ADD RESERVATIONDtoReservationRequest(userId=1, dataFrom=Mon Mar 29 02:00:00 CEST 2021, dataTo=Tue Mar 30 02:00:00 CEST 2021, bookId=2)
+2021-03-29T18:32:48.217+0200 INFO GET RESERVATION
