@@ -1,15 +1,15 @@
 package com.example.book.controller;
 
-import com.example.book.dto.request.DtoBookRequest;
 import com.example.book.dto.request.DtoReservationRequest;
 import com.example.book.dto.response.DtoReservationsResponse;
 import com.example.book.service.ReservationService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -28,9 +28,12 @@ public class ReservationController {
     }
 
     @PostMapping
-    public void saveReservation(@RequestBody DtoReservationRequest dtoReservationRequest){
+    public ResponseEntity saveReservation(@RequestBody DtoReservationRequest dtoReservationRequest){
         LOGGER.info("ADD RESERVATION"+dtoReservationRequest);
+        System.out.println(dtoReservationRequest);
         reservationService.save(dtoReservationRequest);
+        return new ResponseEntity(HttpStatus.OK);
+
     }
 
 

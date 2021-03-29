@@ -14,7 +14,6 @@
         let param = searchParams.get('id')
         let idUser = Cookies.get("id");
 
-
         $.ajax({
             url: "http://192.168.1.109:8080/book/" + param,
             headers: {
@@ -33,7 +32,7 @@
 
                 $('#img').html("<img src=" + response.image + " width='250' >");
                 let av = response.available ? "<strong><font color='#008000'>Dostępna</font></strong>" : "<strong><font color='red'>Niedotępna</font></strong>";
-                $('#data').html("<h2><strong>" + response.title + "</strong></h2> <p> <strong>Wydanie: </strong>" + response.published + "</p><p><strong>Dostępność: </strong>" + av + "</p>" + html + "<p><strong>Opis:<br></strong>" + response.description + '<br><br><input type="date" id="dat" name="dat"><br><br><button type="button" onclick="borrow()" class="btn btn-dark btn-lg btn-block">Wypożycz</button>');
+                $('#data').html("<h2><strong>" + response.title + "</strong></h2> <p> <strong>Wydanie: </strong>" + response.published + "</p><p><strong>Dostępność: </strong>" + av + "</p>" + html + "<p><strong>Opis:<br></strong>" + response.description + '<br><br><input type="date" id="datFrom" name="datFrom"> <input type="date" id="datTo" name="datTo"><br><br><button type="button" onclick="borrow()" class="btn btn-dark btn-lg btn-block">Wypożycz</button>');
             },
             error: function (xhr) {
                 console.log("error");
@@ -41,8 +40,35 @@
         });
 
         function borrow() {
-            console.log(document.getElementById("dat").value);
+            let from = document.getElementById("datFrom").value
+            let to = document.getElementById("datTo").value
+            console.log();
+            console.log();
+            console.log(param);
             console.log(idUser);
+            $.ajax({
+                type: "POST",
+                url: "http://192.168.1.109:8080/reservation",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + Cookies.get("token"),
+                },
+                data: JSON.stringify({userId: idUser, dataFrom:from, dataTo:to,name:name,bookId:param}),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                complete: function(xhr) {
+                    if (xhr.readyState == 4) {
+                        if (xhr.status == 200) {
+                            window.location.href="books.html";
+                        }
+                    } else {
+                        alert("NoGood");
+                    }},
+                error: function (xhr) {
+                    console.log("error");
+                }
+            });
         }
 
         function logOut() {
@@ -54,7 +80,7 @@
     </script>
 </head>
 <body class="bg-light">
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,6 +90,9 @@
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
                 <a class="nav-link" href="books.html">Książki</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="books.html">Moje wypożyczenia</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

@@ -21,7 +21,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void save(UserRequest userRequest) {
-        userRepository.save(userMapper.toUser(userRequest));
+        if(!userRepository.existsByNameOrEmail(userRequest.getName(),userRequest.getEmail())){
+            userRepository.save(userMapper.toUser(userRequest));
+        }
     }
 
     @Override
