@@ -27,8 +27,8 @@ public class ReservationMapper {
 
     public DtoReservationsResponse toDtoReservation(Reservations reservations){
         DtoReservationsResponse dtoReservationsResponse = new DtoReservationsResponse();
-        dtoReservationsResponse.setDataFrom(reservations.getDataFrom());
-        dtoReservationsResponse.setDataTo(reservations.getDataTo());
+        dtoReservationsResponse.setDataFrom(reservations.getDataFrom().toString());
+        dtoReservationsResponse.setDataTo(reservations.getDataTo().toString());
         dtoReservationsResponse.setBook(bookMapper.toDtoBook(reservations.getBook()));
         return dtoReservationsResponse;
     }

@@ -10,6 +10,10 @@
 
     <script type="text/javascript">
 
+        if (Cookies.get('token') === undefined) {
+            window.location.href = 'login.html';
+        }
+
         let searchParams = new URLSearchParams(window.location.search)
         let param = searchParams.get('id')
         let idUser = Cookies.get("id");
@@ -81,7 +85,7 @@
                 <a class="nav-link" href="books.html">Książki</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="books.html">Moje wypożyczenia</a>
+                <a class="nav-link" href="reservations.html">Moje wypożyczenia</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

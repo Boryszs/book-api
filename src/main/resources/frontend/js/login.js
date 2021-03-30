@@ -9,8 +9,8 @@ function validate() {
         dataType: "json",
         success: function (data) {
 
-            Cookies.set("token",data.jwt_token, {sameSite: 'strict' },{ expires: 7, path: '' },{secure:true});
-            Cookies.set("id",data.id, {sameSite: 'strict' },{ expires: 7, path: '' },{secure:true});
+            Cookies.set("token", data.jwt_token, {sameSite: 'strict'}, {secure: true});
+            Cookies.set("id", data.id, {sameSite: 'strict'}, {secure: true});
             window.location.href = 'books.html';
         },
         error: function (xhr) {

@@ -12,7 +12,7 @@ import java.util.Date;
 @Data
 public class DtoReservationsResponse implements Serializable {
 
-    private Date dataFrom;
-    private Date dataTo;
+    private String dataFrom;
+    private String dataTo;
     private DtoBookResponse book;
 }

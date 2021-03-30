@@ -23,7 +23,6 @@ public class Reservations {
     private Date dataTo;
     @ManyToOne
     private User user;
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "book_id")
+    @ManyToOne
     private Book book;
 }

@@ -6,6 +6,8 @@ import com.example.book.mapper.book.BookMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -24,9 +26,8 @@ public class ReservationListMapper {
 
         for(Reservations reservations:reservationsList){
             DtoReservationsResponse reservationsResponse = new DtoReservationsResponse();
-            reservationsResponse.setDataTo(reservations.getDataTo());
-            reservationsResponse.setDataFrom(reservations.getDataFrom());
-
+            reservationsResponse.setDataTo(new SimpleDateFormat("dd-MM-yyyy").format(reservations.getDataTo()));
+            reservationsResponse.setDataFrom(new SimpleDateFormat("dd-MM-yyyy").format(reservations.getDataFrom()));
             reservationsResponse.setBook(bookMapper.toDtoBook(reservations.getBook()));
             responseList.add(reservationsResponse);
         }
