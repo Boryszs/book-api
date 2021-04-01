@@ -23,7 +23,7 @@ public class SwaggerConfig {
     }
 
     private Predicate<String> postPaths() {
-        return or(regex("/book.*"), regex("/author.*"),regex("/test.*"));
+        return or(regex("/book.*"), regex("/author.*"),regex("/test.*"),regex("/user.*"),regex("/book.*"),regex("/reservation.*"));
     }
 
     private ApiInfo apiInfo() {

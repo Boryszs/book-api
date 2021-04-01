@@ -28,16 +28,11 @@
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 complete: function (xhr) {
-                    if (xhr.readyState == 4) {
                         if (xhr.status == 201) {
                             window.location.href = "login.html";
+                        } else {
+                        alert("erroe");
                         }
-                    } else {
-                        alert("NoGood");
-                    }
-                },
-                error: function (xhr) {
-                    console.log("error");
                 }
             });
         }
