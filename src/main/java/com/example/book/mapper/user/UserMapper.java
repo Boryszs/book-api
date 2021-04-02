@@ -29,8 +29,8 @@ public class UserMapper {
 
     public User toUser(UserRequest userRequest){
         User user = new User();
-        user.setName(user.getName());
-        user.setSurname(user.getSurname());
+        user.setName(userRequest.getName());
+        user.setSurname(userRequest.getSurname());
         user.setPassword(bcryptEncoder.encode(userRequest.getPassword()));
         user.setEmail(userRequest.getEmail());
         user.setUsername(userRequest.getUsername());

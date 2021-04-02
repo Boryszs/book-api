@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -7,64 +7,76 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="js/script.js"></script>
     <title>Books</title>
     <script type="text/javascript">
-
-       let totalRecords = 0;
-       let records = [];
-       let displayRecords = [];
-       let recPerPage = 10;
-       let page = 1;
-       let totalPages = 0;
 
         if (Cookies.get('token') === undefined) {
             window.location.href = 'login.html';
         }
 
+        let totalRecords = 0;
+        let data = [];
+        let displayRecordsIndex = 0;
+        let endRec = 0;
+        let recPerPage = 5;
+        let displayRecords = [];
+        let totalP = 0;
+        let tokenObject = JSON.parse(Cookies.get("token"));
+
         $.ajax({
             url: "http://192.168.1.109:8080/book",
+            async: true,
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + Cookies.get("token"),
+                'Authorization': 'Bearer ' + tokenObject.jwt_token,
             },
-            type: "get",
+            type: "GET",
             success: function (response) {
-                let html = '';
-                $.each(response, function (i, item) {
-                    let av = item.available ? '' : "<strong><font color='red' size='2px'>*Niedostępna</font></strong>";
-                    html += '<tr onclick="goToDetails(' + item.id + ')"><td class="align-middle text-right">' + "<img src=" + item.image + " width='80' >" + '<td class="align-middle text-left font-weight-bold">' + item.title + '</td><td class="text-left">' + av + '</td></tr>';
-                });
-                $('#records_table').append(html);
+                totalRecords = response.length;
+                totalP = Math.ceil(totalRecords / recPerPage);
+                data = response;
+                applyPagination();
             },
             error: function (xhr) {
-                console.log(xhr);
+                console.log("error: ", xhr);
             }
         });
 
-        function goToDetails(id) {
+        goToDetails = (id) => {
             window.location.href = 'detail-book.html?id=' + id;
         }
 
-        function logOut() {
-            Cookies.remove('token');
-            Cookies.remove('id');
-
-
-            window.location.href = 'login.html';
+        generateTable = () => {
+            let tr;
+            $('#records_table').html('');
+            for (let i = 0; i < displayRecords.length; i++) {
+                tr = ('<tr onclick="goToDetails(' + displayRecords[i].id + ')">');
+                tr += ("<td class='text-right img-responsiv'>" + "<img src=" + displayRecords[i].image + " width='80'>" + "</td>");
+                tr += ("<td class='align-middle text-left font-weight-bold'>" + displayRecords[i].title + "</td>");
+                let available = displayRecords[i].available ? '' : "<strong><font color='red' size='2px'>*Niedostępna</font></strong>"
+                tr += ("<td class='d-flex justify-content-start text-left'>" + available + "</td>");
+                tr += ("</tr>");
+                $('#records_table').append(tr);
+            }
         }
 
-        //TODO  refactor pagination.
-        $(function () {
+        applyPagination = () => {
             $("#pagination").twbsPagination({
-                totalPages:30, // total pages
-                hideOnlyOnePage: true, // does not display pagination when the total is one page
-                visiblePages:7, //Set the maximum number of page numbers to display (for example, 20 pages, the current first page, then display 1 - 7 pages)
-                currentPage:1, //Set the current page number
+                totalPages: totalP,
+                visiblePages: 6,
+                onPageClick: function (event, page) {
+                    displayRecordsIndex = Math.max(page - 1, 0) * recPerPage;
+                    endRec = (displayRecordsIndex) + recPerPage;
+                    displayRecords = data.slice(displayRecordsIndex, endRec);
+                    generateTable();
+                }
             })
-        })
+        }
 
     </script>
+
 </head>
 <body class="bg-light">
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
@@ -76,14 +88,14 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="books.html">Książki<span class="sr-only">(current)</span></a>
+                <a class="nav-link font-weight-bold" href="books.html">Książki<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="reservations.html">Moje wypożyczenia</a>
+                <a class="nav-link font-weight-bold" href="reservations.html">Moje wypożyczenia</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <button type="button" class="btn btn-light" onclick="logOut()">Log out</button>
+            <button type="button" class="btn btn-light font-weight-bold" onclick="logOut()">Log out</button>
         </form>
     </div>
 </nav>
@@ -92,7 +104,7 @@
     </table>
 
 </div>
-<div class="page">
+<div class="page d-flex justify-content-center">
     <ul id="pagination" class="pagination pull-right"></ul>
 </div>
 </body>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <title>Detail</title>
@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="js/script.js"></script>
 
     <script type="text/javascript">
 
@@ -16,59 +17,72 @@
 
         let searchParams = new URLSearchParams(window.location.search)
         let param = searchParams.get('id')
-        let idUser = Cookies.get("id");
+        let tokenObject = JSON.parse(Cookies.get("token"));
+        let date = [];
 
         $.ajax({
             url: "http://192.168.1.109:8080/book/" + param,
+            async: true,
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'Authorization': 'Bearer ' + Cookies.get("token"),
+                'Authorization': 'Bearer ' + tokenObject.jwt_token,
             },
-            type: "get",
+            type: "GET",
             success: function (response) {
-                let html = '<strong>Autorzy: </strong>';
-                $.each(response.author, function (i, item) {
-                    html += "<p>" + item.name + ' ' + item.surname + "</p>"
-                });
-
-                $('#img').html("<img src=" + response.image + " width='250' >");
-                let av = response.available ? "<strong><font color='#008000'>Dostępna</font></strong>" : "<strong><font color='red'>Niedotępna</font></strong>";
-                $('#data').html("<h2><strong>" + response.title + "</strong></h2> <p> <strong>Wydanie: </strong>" + response.published + "</p><p><strong>Dostępność: </strong>" + av + "</p>" + html + "<p><strong>Opis:<br></strong>" + response.description + '<br><br><input type="date" id="datFrom" name="datFrom"> <input type="date" id="datTo" name="datTo"><br><br><button type="button" onclick="borrow()" class="btn btn-dark btn-lg btn-block">Wypożycz</button>');
+                data = response;
+                generatePage();
             },
             error: function (xhr) {
-                console.log("error");
+                console.log("error: ", xhr);
             }
         });
 
-        function borrow() {
+        generatePage = () => {
+            let authors = '<strong>Autorzy: </strong>';
+            for (let i = 0; i < data.author.length; i++) {
+                authors += ("<p>" + data.author[i].name + ' ' + data.author[i].surname + "</p>");
+            }
+
+            $('#img').html("<img src=" + data.image + " width='250' >");
+            let available = data.available ? "<strong><font color='#008000'>Dostępna</font></strong>" : "<strong><font color='red'>Niedotępna</font></strong>";
+
+            let html = ("<h2><strong>" + data.title + "</strong></h2>");
+            html += ("<p><strong>Wydanie: </strong>" + data.published + "</p>");
+            html += ("<p><strong>Dostępność:</strong>" + available + "</p>");
+            html += (authors);
+            html += ("<p><strong>Opis:<br></strong>" + data.description + "</p><br>");
+            html += ("<font><strong>Data Wypożyczenia</strong></font><font style='margin-left: 40px'><strong>Data Końca Wypożyczenia</strong></font><br>");
+            html += ("<input type='date' id='datFrom' name='datFrom'> <input style='margin-left: 70px' type='date' id='datTo' name='datTo'><br><br>");
+            html += ("<button type='button' onclick='borrow()' class='btn btn-dark btn-lg btn-block'>Wypożycz</button>");
+            $('#data').html(html);
+        }
+
+
+        borrow = () => {
             let from = document.getElementById("datFrom").value
             let to = document.getElementById("datTo").value
             $.ajax({
                 type: "POST",
                 url: "http://192.168.1.109:8080/reservation",
+                async: true,
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer ' + Cookies.get("token"),
+                    'Authorization': 'Bearer ' + tokenObject.jwt_token,
                 },
-                data: JSON.stringify({userId: idUser, dataFrom: from, dataTo: to, name: name, bookId: param}),
-                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({userId: tokenObject.id, dataFrom: from, dataTo: to, name: name, bookId: param}),
                 dataType: "json",
                 complete: function (xhr) {
                     if (xhr.status == 200) {
                         window.location.href = "books.html";
+                    } else {
+                        console.log("error");
                     }
                 }
             });
         }
 
-        function logOut() {
-            Cookies.remove('token');
-            Cookies.remove('id');
-            window.location.href = 'login.html';
-        }
 
     </script>
 </head>
