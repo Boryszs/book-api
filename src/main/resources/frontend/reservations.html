@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Reservations</title>
+    <script src="js/navbar.js" defer></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="js/script.js"></script>
-
 
     <script type="text/javascript">
 
@@ -49,18 +49,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="books.html">Książki<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="reservations.html">Moje wypożyczenia</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <button type="button" class="btn btn-light" onclick="logOut()">Log out</button>
-        </form>
+    <div id="navigation" class="collapse navbar-collapse" id="navbarTogglerDemo03" >
     </div>
 </nav>
 <div class="bg-light">

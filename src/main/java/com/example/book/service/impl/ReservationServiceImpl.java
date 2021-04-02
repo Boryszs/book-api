@@ -35,7 +35,7 @@ public class ReservationServiceImpl implements ReservationService {
 
     @Override
     public List<DtoReservationsResponse> findAll(Long id, Date date) {
-        return reservationListMapper.todtoReservationsResponse(reservationRepository.findAll(id,date));
+        return reservationListMapper.todtoReservationsResponse(reservationRepository.findAll(id, date));
     }
 
     @Override
@@ -43,14 +43,7 @@ public class ReservationServiceImpl implements ReservationService {
         Reservations reservation = reservationMapper.toReservations(reservations);
         reservation.setBook(bookRepository.findById(reservations.getBookId()).get());
         reservation.setUser(userRepository.findById(reservations.getUserId()).get());
-
-//        User user = userRepository.findById(reservations.getUserId()).get();
-//        List<Reservations>  reservationsList = user.getReservations();
-//        reservationsList.add(reservation);
-//        user.setReservations(reservationsList);
-//        userRepository.save(user);
-
-          reservationRepository.save(reservation);
+        reservationRepository.save(reservation);
     }
 
     @Override
@@ -59,7 +52,7 @@ public class ReservationServiceImpl implements ReservationService {
     }
 
     @Override
-    public void update(DtoReservationRequest reservations,Integer id) {
+    public void update(DtoReservationRequest reservations, Integer id) {
         Reservations reservation = reservationMapper.toReservations(reservations);
         reservation.setBook(bookRepository.findById(reservations.getBookId()).get());
         reservation.setUser(userRepository.findById(reservations.getUserId()).get());

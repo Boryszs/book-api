@@ -56,19 +56,19 @@ public class AuthorServiceImpl implements AuthorService {
         Book book = bookMapper.toBook(dtoAuthorRequest.getDtoBooksRequest());
         List<Authors> authors = authorMapper.toAuthor(dtoAuthorRequest.getDtoAuthorsRequest());
 
-        for(Authors author:authors){
-            if(authorRespoitory.existsByNameAndSurname(author.getName(),author.getSurname())) {
-                Authors auth = authorRespoitory.findByNameAndSurname(author.getName(),author.getSurname());
+        authors.forEach(author -> {
+            if (authorRespoitory.existsByNameAndSurname(author.getName(), author.getSurname())) {
+                Authors auth = authorRespoitory.findByNameAndSurname(author.getName(), author.getSurname());
                 auth.getBooks().add(book);
                 bookRepository.save(book);
                 authorRespoitory.save(auth);
-            }else{
+            } else {
                 author.setBooks(new LinkedList<>(List.of(book)));
                 bookRepository.save(book);
                 author.setBooks(new LinkedList<>(List.of(book)));
                 authorRespoitory.save(author);
             }
-        }
+        });
     }
 
     @Override
@@ -79,7 +79,6 @@ public class AuthorServiceImpl implements AuthorService {
             authors.get().setSurname(dtoAuthorsRequest.getSurname());
             authors.get().setBooks(authors.get().getBooks());
             authorRespoitory.save(authors.get());
-
         }
     }
 }

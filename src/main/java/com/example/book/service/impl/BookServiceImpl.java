@@ -56,19 +56,19 @@ public class BookServiceImpl implements BookService {
         Book book = bookMapper.toBook(dtoBookRequest.getDtoBooksRequest());
         List<Authors> authors = authorMapper.toAuthor(dtoBookRequest.getDtoAuthorsRequest());
 
-        for(Authors author:authors){
-           if(authorRespoitory.existsByNameAndSurname(author.getName(),author.getSurname())) {
-               Authors auth = authorRespoitory.findByNameAndSurname(author.getName(),author.getSurname());
-               auth.getBooks().add(book);
-               bookRepository.save(book);
-               authorRespoitory.save(auth);
-           }else{
-               author.setBooks(new LinkedList<>(List.of(book)));
-               bookRepository.save(book);
-               author.setBooks(new LinkedList<>(List.of(book)));
-               authorRespoitory.save(author);
-           }
-        }
+        authors.forEach(author -> {
+            if (authorRespoitory.existsByNameAndSurname(author.getName(), author.getSurname())) {
+                Authors auth = authorRespoitory.findByNameAndSurname(author.getName(), author.getSurname());
+                auth.getBooks().add(book);
+                bookRepository.save(book);
+                authorRespoitory.save(auth);
+            } else {
+                author.setBooks(new LinkedList<>(List.of(book)));
+                bookRepository.save(book);
+                author.setBooks(new LinkedList<>(List.of(book)));
+                authorRespoitory.save(author);
+            }
+        });
     }
 
     @Override

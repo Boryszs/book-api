@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Detail</title>
+    <script src="js/navbar.js" defer></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -54,7 +55,8 @@
             html += ("<p><strong>Opis:<br></strong>" + data.description + "</p><br>");
             html += ("<font><strong>Data Wypożyczenia</strong></font><font style='margin-left: 40px'><strong>Data Końca Wypożyczenia</strong></font><br>");
             html += ("<input type='date' id='datFrom' name='datFrom'> <input style='margin-left: 70px' type='date' id='datTo' name='datTo'><br><br>");
-            html += ("<button type='button' onclick='borrow()' class='btn btn-dark btn-lg btn-block'>Wypożycz</button>");
+            let active = data.available ? 'enable' : 'disabled';
+            html += ("<button type='button' onclick='borrow()' class='btn btn-dark btn-lg btn-block' "+active+">Wypożycz</button>");
             $('#data').html(html);
         }
 
@@ -93,18 +95,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="books.html">Książki</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="reservations.html">Moje wypożyczenia</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <button type="button" class="btn btn-light" onclick="logOut()">Log out</button>
-        </form>
+    <div id="navigation" class="collapse navbar-collapse" id="navbarTogglerDemo03" >
     </div>
 </nav>
 <div class="container">

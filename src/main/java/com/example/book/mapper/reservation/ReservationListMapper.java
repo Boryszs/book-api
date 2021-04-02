@@ -21,16 +21,16 @@ public class ReservationListMapper {
         this.bookMapper = bookMapper;
     }
 
-    public List<DtoReservationsResponse> todtoReservationsResponse(List<Reservations> reservationsList){
+    public List<DtoReservationsResponse> todtoReservationsResponse(List<Reservations> reservationsList) {
         List<DtoReservationsResponse> responseList = new LinkedList<>();
 
-        for(Reservations reservations:reservationsList){
+        reservationsList.forEach(reservations -> {
             DtoReservationsResponse reservationsResponse = new DtoReservationsResponse();
             reservationsResponse.setDataTo(new SimpleDateFormat("dd-MM-yyyy").format(reservations.getDataTo()));
             reservationsResponse.setDataFrom(new SimpleDateFormat("dd-MM-yyyy").format(reservations.getDataFrom()));
             reservationsResponse.setBook(bookMapper.toDtoBook(reservations.getBook()));
             responseList.add(reservationsResponse);
-        }
+        });
 
         return responseList;
     }
