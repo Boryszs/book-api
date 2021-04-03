@@ -51,7 +51,6 @@ public class AuthenticationController {
 
     @PostMapping(value = "/register")
     public ResponseEntity createUser(@RequestBody UserRequest userRequest) throws Exception {
-        System.out.println(userRequest);
         userService.save(userRequest);
         return new ResponseEntity(HttpStatus.CREATED);
     }

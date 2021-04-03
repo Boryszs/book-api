@@ -1,6 +1,3 @@
-
-
-
 let navBar = '<ul class="navbar-nav mr-auto mt-2 mt-lg-0">';
 navBar += '<li class="nav-item active">';
 navBar += '<a class="nav-link font-weight-bold" href="books.html">Książki<span class="sr-only">(current)</span></a>';

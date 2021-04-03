@@ -30,7 +30,6 @@ public class ReservationController {
     @PostMapping
     public ResponseEntity saveReservation(@RequestBody DtoReservationRequest dtoReservationRequest){
         LOGGER.info("ADD RESERVATION"+dtoReservationRequest);
-        System.out.println(dtoReservationRequest);
         reservationService.save(dtoReservationRequest);
         return new ResponseEntity(HttpStatus.OK);
 

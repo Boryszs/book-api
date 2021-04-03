@@ -22,11 +22,11 @@
         let endRec = 0;
         let recPerPage = 5;
         let displayRecords = [];
-        let totalP = 0;
+        let totalPage = 0;
         let tokenObject = JSON.parse(Cookies.get("token"));
 
         $.ajax({
-            url: "http://192.168.1.109:8080/book",
+            url: "http://127.0.0.1:8080/book",
             async: true,
             headers: {
                 'Accept': 'application/json',
@@ -36,7 +36,7 @@
             type: "GET",
             success: function (response) {
                 totalRecords = response.length;
-                totalP = Math.ceil(totalRecords / recPerPage);
+                totalPage = Math.ceil(totalRecords / recPerPage);
                 data = response;
                 applyPagination();
             },
@@ -56,7 +56,7 @@
                 tr = ('<tr onclick="goToDetails(' + displayRecords[i].id + ')">');
                 tr += ("<td class='text-right img-responsiv'>" + "<img src=" + displayRecords[i].image + " width='80'>" + "</td>");
                 tr += ("<td class='align-middle text-left font-weight-bold'>" + displayRecords[i].title + "</td>");
-                let available = displayRecords[i].available ? '' : "<strong><font color='red' size='2px'>*Niedostępna</font></strong>"
+                let available = displayRecords[i].available ? '' : "<strong><p style='color: red;font-size: 14px'>*Niedostępna</font></strong>"
                 tr += ("<td class='d-flex justify-content-start text-left'>" + available + "</td>");
                 tr += ("</tr>");
                 $('#records_table').append(tr);
@@ -65,7 +65,7 @@
 
         applyPagination = () => {
             $("#pagination").twbsPagination({
-                totalPages: totalP,
+                totalPages: totalPage,
                 visiblePages: 6,
                 onPageClick: function (event, page) {
                     displayRecordsIndex = Math.max(page - 1, 0) * recPerPage;

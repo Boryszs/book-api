@@ -22,7 +22,7 @@
         let date = [];
 
         $.ajax({
-            url: "http://192.168.1.109:8080/book/" + param,
+            url: "http://127.0.0.1:8080/book/" + param,
             async: true,
             headers: {
                 'Accept': 'application/json',
@@ -31,7 +31,7 @@
             },
             type: "GET",
             success: function (response) {
-                data = response;
+                dataResponse = response;
                 generatePage();
             },
             error: function (xhr) {
@@ -41,21 +41,21 @@
 
         generatePage = () => {
             let authors = '<strong>Autorzy: </strong>';
-            for (let i = 0; i < data.author.length; i++) {
-                authors += ("<p>" + data.author[i].name + ' ' + data.author[i].surname + "</p>");
+            for (let i = 0; i < dataResponse.author.length; i++) {
+                authors += ("<p>" + dataResponse.author[i].name + ' ' + dataResponse.author[i].surname + "</p>");
             }
 
-            $('#img').html("<img src=" + data.image + " width='250' >");
-            let available = data.available ? "<strong><font color='#008000'>Dostępna</font></strong>" : "<strong><font color='red'>Niedotępna</font></strong>";
+            $('#img').html("<img src=" + dataResponse.image + " width='250' >");
+            let available = dataResponse.available ? "<strong><font color='#008000'>Dostępna</font></strong>" : "<strong><font color='red'>Niedotępna</font></strong>";
 
-            let html = ("<h2><strong>" + data.title + "</strong></h2>");
-            html += ("<p><strong>Wydanie: </strong>" + data.published + "</p>");
+            let html = ("<h2><strong>" + dataResponse.title + "</strong></h2>");
+            html += ("<p><strong>Wydanie: </strong>" + dataResponse.published + "</p>");
             html += ("<p><strong>Dostępność:</strong>" + available + "</p>");
             html += (authors);
-            html += ("<p><strong>Opis:<br></strong>" + data.description + "</p><br>");
+            html += ("<p><strong>Opis:<br></strong>" + dataResponse.description + "</p><br>");
             html += ("<font><strong>Data Wypożyczenia</strong></font><font style='margin-left: 40px'><strong>Data Końca Wypożyczenia</strong></font><br>");
             html += ("<input type='date' id='datFrom' name='datFrom'> <input style='margin-left: 70px' type='date' id='datTo' name='datTo'><br><br>");
-            let active = data.available ? 'enable' : 'disabled';
+            let active = dataResponse.available ? 'enable' : 'disabled';
             html += ("<button type='button' onclick='borrow()' class='btn btn-dark btn-lg btn-block' "+active+">Wypożycz</button>");
             $('#data').html(html);
         }
@@ -66,7 +66,7 @@
             let to = document.getElementById("datTo").value
             $.ajax({
                 type: "POST",
-                url: "http://192.168.1.109:8080/reservation",
+                url: "http://127.0.0.1:8080/reservation",
                 async: true,
                 headers: {
                     'Accept': 'application/json',

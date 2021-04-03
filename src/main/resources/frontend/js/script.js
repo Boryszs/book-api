@@ -5,7 +5,7 @@ logIn = () =>{
 
     $.ajax({
         type: "POST",
-        url: "http://192.168.1.109:8080/user/authenticate",
+        url: "http://127.0.0.1:8080/user/authenticate",
         async:true,
         data: JSON.stringify({username: username, password: password}),
         contentType: "application/json; charset=utf-8",
