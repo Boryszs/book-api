@@ -18,8 +18,8 @@ import java.util.List;
 @RequestMapping(value = "/book")
 public class BookController {
 
-    private BookService bookService;
     private static final Logger LOGGER = LoggerFactory.getLogger(BookController.class);
+    private final BookService bookService;
 
     @Autowired
     public BookController(BookService bookService) {
@@ -27,31 +27,32 @@ public class BookController {
     }
 
     @GetMapping
-    public ResponseEntity<List<DtoBookResponse>> getAllBook(){
+    public ResponseEntity<List<DtoBookResponse>> getAllBook() {
         LOGGER.info("GET ALL BOOKS");
         return new ResponseEntity(bookService.findAll(), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<DtoBookResponse> getBook(@PathVariable(value = "id") Integer id){
-        LOGGER.info("GET BOOK TITLE ",id);
+    public ResponseEntity<DtoBookResponse> getBook(@PathVariable(value = "id") Integer id) {
+        LOGGER.info("GET BOOK TITLE ", id);
         return new ResponseEntity(bookService.findById(id), HttpStatus.OK);
     }
 
     @DeleteMapping(value = "/{id}")
-    public void deleteBook(@PathVariable(value = "id") Integer id){
+    public ResponseEntity deleteBook(@PathVariable(value = "id") Integer id) {
         LOGGER.info("DELETE BOOK ID ", id);
         bookService.deleteById(id);
+        return new ResponseEntity(HttpStatus.OK);
     }
 
     @PutMapping(value = "/{id}")
-    public void updateBook(@PathVariable(value = "id") Integer id, @RequestBody DtoBooksRequest dtoBooksRequest){
-        LOGGER.info("UPDATE BOOK ID ",id);
-        bookService.update(id,dtoBooksRequest);
+    public void updateBook(@PathVariable(value = "id") Integer id, @RequestBody DtoBooksRequest dtoBooksRequest) {
+        LOGGER.info("UPDATE BOOK ID ", id);
+        bookService.update(id, dtoBooksRequest);
     }
 
     @PostMapping
-    public void saveBook(@RequestBody DtoBookRequest dtoBookRequest){
+    public void saveBook(@RequestBody DtoBookRequest dtoBookRequest) {
         LOGGER.info("ADD BOOK");
         bookService.save(dtoBookRequest);
     }

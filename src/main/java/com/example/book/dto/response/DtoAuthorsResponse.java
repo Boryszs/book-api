@@ -10,10 +10,9 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Data
 public class DtoAuthorsResponse implements Serializable {
+
     private Integer id;
-
     private String name;
-
     private String surname;
 
 }

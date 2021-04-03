@@ -16,12 +16,12 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+
 @Component
 public class JwtFilter extends OncePerRequestFilter {
 
-    private JwtUserServiceImpl jwtUserDetailsService;
-
-    private JwtTokenUtil jwtTokenUtil;
+    private final JwtUserServiceImpl jwtUserDetailsService;
+    private final JwtTokenUtil jwtTokenUtil;
 
     @Autowired
     public JwtFilter(JwtUserServiceImpl jwtUserDetailsService, JwtTokenUtil jwtTokenUtil) {
@@ -43,7 +43,7 @@ public class JwtFilter extends OncePerRequestFilter {
                 System.out.println("Unable to get JWT Token");
             } catch (ExpiredJwtException e) {
                 System.out.println("JWT Token has expired");
-            }catch (MalformedJwtException e){
+            } catch (MalformedJwtException e) {
                 System.out.println("Empty Authoritation on Header");
             }
         } else {

@@ -29,15 +29,15 @@ public class Book {
     private String image;
 
     @Lob
-    @Column(name = "description", length = 100000 )
+    @Column(name = "description", length = 100000)
     private String description;
 
     @Column(name = "available")
     private Boolean available;
 
-    @ManyToMany(mappedBy = "books", cascade = CascadeType.ALL )
+    @ManyToMany(mappedBy = "books", cascade = CascadeType.ALL)
     private List<Authors> authors;
 
-    @OneToMany(mappedBy = "book", cascade=CascadeType.ALL)
+    @OneToMany(mappedBy = "book", cascade = CascadeType.ALL)
     private List<Reservations> reservations;
 }

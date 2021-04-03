@@ -20,7 +20,7 @@ import java.util.List;
 public class AuthorController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AuthorController.class);
-    private AuthorService authorService;
+    private final AuthorService authorService;
 
     @Autowired
     public AuthorController(AuthorService authorService) {
@@ -28,31 +28,32 @@ public class AuthorController {
     }
 
     @GetMapping
-    public ResponseEntity<List<DtoBookResponse>> getAllBook(){
+    public ResponseEntity<List<DtoBookResponse>> getAllBook() {
         LOGGER.info("GET ALL AUTHORS");
         return new ResponseEntity(authorService.findAll(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<List<DtoBookResponse>> getAuthor(@PathVariable(value = "id") Integer id){
-        LOGGER.info("GET AUTHOR ID ",id);
+    public ResponseEntity<List<DtoBookResponse>> getAuthor(@PathVariable(value = "id") Integer id) {
+        LOGGER.info("GET AUTHOR ID ", id);
         return new ResponseEntity(authorService.findById(id), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteAuthor(@PathVariable(value = "id") Integer id){
-        LOGGER.info("DELETE AUTHOR ID ",id);
+    public ResponseEntity deleteAuthor(@PathVariable(value = "id") Integer id) {
+        LOGGER.info("DELETE AUTHOR ID ", id);
         authorService.deleteById(id);
+        return new ResponseEntity(HttpStatus.OK);
     }
 
     @PutMapping("/{id}")
-    public void updateAuthor(@PathVariable(value = "id") Integer id,@RequestBody DtoAuthorsRequest authorsRequest){
+    public void updateAuthor(@PathVariable(value = "id") Integer id, @RequestBody DtoAuthorsRequest authorsRequest) {
         LOGGER.info("UPDATE AUTHOR ID {}", id);
-        authorService.update(id,authorsRequest);
+        authorService.update(id, authorsRequest);
     }
 
     @PostMapping
-    public void addAuthor(@RequestBody DtoAuthorRequest authorRequest){
+    public void addAuthor(@RequestBody DtoAuthorRequest authorRequest) {
         LOGGER.info("ADD AUTHOR");
         authorService.save(authorRequest);
     }

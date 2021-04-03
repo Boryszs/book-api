@@ -21,11 +21,11 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @EnableWebSecurity
 @CrossOrigin
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private JwtAuthenticationEntry jwtAuthenticationEntry;
-    private UserDetailsService jwtUserServiceImpl;
-    private JwtFilter jwtFilter;
+    private final JwtAuthenticationEntry jwtAuthenticationEntry;
+    private final UserDetailsService jwtUserServiceImpl;
+    private final JwtFilter jwtFilter;
 
     @Autowired
     public WebSecurityConfig(JwtAuthenticationEntry jwtAuthenticationEntry, UserDetailsService jwtUserServiceImpl, JwtFilter jwtFilter) {
@@ -51,8 +51,7 @@ public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web
-                .ignoring()
+        web.ignoring()
                 .antMatchers("/h2-console/**",
                         "/v2/api-docs",
                         "/configuration/ui",
@@ -66,8 +65,8 @@ public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
 
         httpSecurity.cors().and().csrf().disable()
                 .authorizeRequests().antMatchers("/user/*").permitAll().
-                        anyRequest().authenticated().and().
-                        exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntry).and().sessionManagement()
+                anyRequest().authenticated().and().
+                exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntry).and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         httpSecurity.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
     }

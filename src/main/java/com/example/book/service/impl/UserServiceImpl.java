@@ -11,8 +11,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private UserRepository userRepository;
-    private UserMapper userMapper;
+    private final UserRepository userRepository;
+    private final UserMapper userMapper;
+
     @Autowired
     public UserServiceImpl(UserRepository userRepository, UserMapper userMapper) {
         this.userRepository = userRepository;
@@ -21,7 +22,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void save(UserRequest userRequest) {
-        if(!userRepository.existsByNameOrEmail(userRequest.getName(),userRequest.getEmail())){
+        if (!userRepository.existsByNameOrEmail(userRequest.getName(), userRequest.getEmail())) {
             userRepository.save(userMapper.toUser(userRequest));
         }
     }

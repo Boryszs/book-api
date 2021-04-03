@@ -21,11 +21,11 @@ import java.util.Optional;
 @Service
 public class BookServiceImpl implements BookService {
 
-    private BookRepository bookRepository;
-    private BookListMapper bookListMapper;
-    private BookMapper bookMapper;
-    private AuthorMapper authorMapper;
-    private AuthorRespoitory authorRespoitory;
+    private final BookRepository bookRepository;
+    private final BookListMapper bookListMapper;
+    private final BookMapper bookMapper;
+    private final AuthorMapper authorMapper;
+    private final AuthorRespoitory authorRespoitory;
 
     @Autowired
     public BookServiceImpl(BookRepository bookRepository, BookListMapper bookListMapper, BookMapper bookMapper, AuthorMapper authorMapper, AuthorRespoitory authorRespoitory) {
@@ -73,13 +73,13 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void update(Integer id, DtoBooksRequest dtoBooksRequest) {
-       Optional<Book> book = bookRepository.findById(id);
-       if(book.isPresent()){
-           book.get().setImage(dtoBooksRequest.getImage());
-           book.get().setTitle(dtoBooksRequest.getTitle());
-           book.get().setPublished(dtoBooksRequest.getPublished());
-           bookRepository.save(book.get());
-       }
+        Optional<Book> book = bookRepository.findById(id);
+        if (book.isPresent()) {
+            book.get().setImage(dtoBooksRequest.getImage());
+            book.get().setTitle(dtoBooksRequest.getTitle());
+            book.get().setPublished(dtoBooksRequest.getPublished());
+            bookRepository.save(book.get());
+        }
     }
 
 

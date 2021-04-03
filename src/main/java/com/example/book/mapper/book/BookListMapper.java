@@ -11,28 +11,28 @@ import java.util.List;
 @Component
 public class BookListMapper {
 
-   public List<DtoBookResponse> toDtoBook(List<Book> books){
-       List<DtoBookResponse> bookList = new LinkedList<>();
+    public List<DtoBookResponse> toDtoBook(List<Book> books) {
+        List<DtoBookResponse> bookList = new LinkedList<>();
 
-       books.forEach(book -> {
-           DtoBookResponse dtoBookResponse = new DtoBookResponse();
-           dtoBookResponse.setId(book.getId());
-           dtoBookResponse.setTitle(book.getTitle());
-           dtoBookResponse.setPublished(book.getPublished());
-           dtoBookResponse.setImage(book.getImage());
-           dtoBookResponse.setAvailable(book.getAvailable());
-           dtoBookResponse.setDescription(book.getDescription());
-           List<DtoAuthorsResponse> authorList = new LinkedList<>();
-           book.getAuthors().forEach(authors -> {
-               DtoAuthorsResponse dtoAuthorsResponse = new DtoAuthorsResponse();
-               dtoAuthorsResponse.setId(authors.getId());
-               dtoAuthorsResponse.setName(authors.getName());
-               dtoAuthorsResponse.setSurname(authors.getSurname());
-               authorList.add(dtoAuthorsResponse);
-           });
-           dtoBookResponse.setAuthor(authorList);
-           bookList.add(dtoBookResponse);
-       });
-       return bookList;
-   }
+        books.forEach(book -> {
+            DtoBookResponse dtoBookResponse = new DtoBookResponse();
+            dtoBookResponse.setId(book.getId());
+            dtoBookResponse.setTitle(book.getTitle());
+            dtoBookResponse.setPublished(book.getPublished());
+            dtoBookResponse.setImage(book.getImage());
+            dtoBookResponse.setAvailable(book.getAvailable());
+            dtoBookResponse.setDescription(book.getDescription());
+            List<DtoAuthorsResponse> authorList = new LinkedList<>();
+            book.getAuthors().forEach(authors -> {
+                DtoAuthorsResponse dtoAuthorsResponse = new DtoAuthorsResponse();
+                dtoAuthorsResponse.setId(authors.getId());
+                dtoAuthorsResponse.setName(authors.getName());
+                dtoAuthorsResponse.setSurname(authors.getSurname());
+                authorList.add(dtoAuthorsResponse);
+            });
+            dtoBookResponse.setAuthor(authorList);
+            bookList.add(dtoBookResponse);
+        });
+        return bookList;
+    }
 }

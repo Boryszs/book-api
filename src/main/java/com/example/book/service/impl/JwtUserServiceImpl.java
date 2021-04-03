@@ -13,7 +13,7 @@ import java.util.ArrayList;
 @Service
 public class JwtUserServiceImpl implements UserDetailsService {
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @Autowired
     public JwtUserServiceImpl(UserRepository userRepository) {

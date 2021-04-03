@@ -18,11 +18,11 @@ import java.util.List;
 @Service
 public class ReservationServiceImpl implements ReservationService {
 
-    private ReservationListMapper reservationListMapper;
-    private ReservationMapper reservationMapper;
-    private ReservationRepository reservationRepository;
-    private UserRepository userRepository;
-    private BookRepository bookRepository;
+    private final ReservationListMapper reservationListMapper;
+    private final ReservationMapper reservationMapper;
+    private final ReservationRepository reservationRepository;
+    private final UserRepository userRepository;
+    private final BookRepository bookRepository;
 
     @Autowired
     public ReservationServiceImpl(ReservationListMapper reservationListMapper, ReservationMapper reservationMapper, ReservationRepository reservationRepository, UserRepository userRepository, BookRepository bookRepository) {

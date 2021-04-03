@@ -11,6 +11,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Data
 public class AuthenticationResponse implements Serializable {
+
     private Long id;
     @JsonProperty(value = "jwt_token")
     private String jwtToken;

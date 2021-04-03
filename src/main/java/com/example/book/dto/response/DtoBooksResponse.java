@@ -12,14 +12,9 @@ import java.io.Serializable;
 public class DtoBooksResponse implements Serializable {
 
     private Integer id;
-
     private String title;
-
     private Integer published;
-
     private String image;
-
     private String description;
-
     private Boolean available;
 }

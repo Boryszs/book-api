@@ -10,14 +10,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class ReservationMapper {
 
-    private BookMapper bookMapper;
+    private final BookMapper bookMapper;
 
     @Autowired
     public ReservationMapper(BookMapper bookMapper) {
         this.bookMapper = bookMapper;
     }
 
-    public Reservations toReservations(DtoReservationRequest dtoReservationRequest){
+    public Reservations toReservations(DtoReservationRequest dtoReservationRequest) {
         Reservations reservations = new Reservations();
         reservations.setDataFrom(dtoReservationRequest.getDataFrom());
         reservations.setDataTo(dtoReservationRequest.getDataTo());
@@ -25,7 +25,7 @@ public class ReservationMapper {
     }
 
 
-    public DtoReservationsResponse toDtoReservation(Reservations reservations){
+    public DtoReservationsResponse toDtoReservation(Reservations reservations) {
         DtoReservationsResponse dtoReservationsResponse = new DtoReservationsResponse();
         dtoReservationsResponse.setDataFrom(reservations.getDataFrom().toString());
         dtoReservationsResponse.setDataTo(reservations.getDataTo().toString());

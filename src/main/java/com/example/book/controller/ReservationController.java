@@ -19,7 +19,7 @@ import java.util.List;
 public class ReservationController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ReservationController.class);
-    private ReservationService reservationService;
+    private final ReservationService reservationService;
 
 
     @Autowired
@@ -28,22 +28,20 @@ public class ReservationController {
     }
 
     @PostMapping
-    public ResponseEntity saveReservation(@RequestBody DtoReservationRequest dtoReservationRequest){
-        LOGGER.info("ADD RESERVATION"+dtoReservationRequest);
+    public ResponseEntity saveReservation(@RequestBody DtoReservationRequest dtoReservationRequest) {
+        LOGGER.info("ADD RESERVATION");
         reservationService.save(dtoReservationRequest);
         return new ResponseEntity(HttpStatus.OK);
-
     }
 
-
     @GetMapping("/{id}")
-    public List<DtoReservationsResponse> getReservation(@PathVariable(value = "id") Long id){
+    public List<DtoReservationsResponse> getReservation(@PathVariable(value = "id") Long id) {
         LOGGER.info("GET RESERVATION");
-        return reservationService.findAll(id,new Date());
+        return reservationService.findAll(id, new Date());
     }
 
     @DeleteMapping("/{id}")
-    public void deleteReservation(@PathVariable(value = "id") Integer id){
+    public void deleteReservation(@PathVariable(value = "id") Integer id) {
         LOGGER.info("DELETE RESERVATION");
         reservationService.deleteById(id);
     }

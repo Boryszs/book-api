@@ -9,7 +9,7 @@ public class TestController {
 
     @ResponseBody
     @GetMapping
-    public String test(){
+    public String test() {
         return "Hello World";
     }
 

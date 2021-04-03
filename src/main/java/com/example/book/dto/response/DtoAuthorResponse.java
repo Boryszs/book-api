@@ -13,10 +13,7 @@ import java.util.List;
 public class DtoAuthorResponse implements Serializable {
 
     private Integer id;
-
     private String name;
-
     private String surname;
-
     private List<DtoBooksResponse> book;
 }

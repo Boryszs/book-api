@@ -14,7 +14,7 @@ import java.util.List;
 @Component
 public class ReservationListMapper {
 
-    private BookMapper bookMapper;
+    private final BookMapper bookMapper;
 
     @Autowired
     public ReservationListMapper(BookMapper bookMapper) {

@@ -21,11 +21,11 @@ import java.util.Optional;
 @Service
 public class AuthorServiceImpl implements AuthorService {
 
-    private AuthorRespoitory authorRespoitory;
-    private AuthorMapper authorMapper;
-    private AuthorListMapper authorListMapper;
-    private BookMapper bookMapper;
-    private BookRepository bookRepository;
+    private final AuthorRespoitory authorRespoitory;
+    private final AuthorMapper authorMapper;
+    private final AuthorListMapper authorListMapper;
+    private final BookMapper bookMapper;
+    private final BookRepository bookRepository;
 
     @Autowired
     public AuthorServiceImpl(AuthorRespoitory authorRespoitory, AuthorMapper authorMapper, AuthorListMapper authorListMapper, BookMapper bookMapper, BookRepository bookRepository) {
@@ -74,7 +74,7 @@ public class AuthorServiceImpl implements AuthorService {
     @Override
     public void update(Integer id, DtoAuthorsRequest dtoAuthorsRequest) {
         Optional<Authors> authors = authorRespoitory.findById(id);
-        if(authors.isPresent()){
+        if (authors.isPresent()) {
             authors.get().setName(dtoAuthorsRequest.getName());
             authors.get().setSurname(dtoAuthorsRequest.getSurname());
             authors.get().setBooks(authors.get().getBooks());

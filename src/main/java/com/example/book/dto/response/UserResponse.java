@@ -10,6 +10,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Data
 public class UserResponse implements Serializable {
+
     private Long id;
     private String username;
     private String name;

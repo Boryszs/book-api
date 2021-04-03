@@ -12,6 +12,5 @@ import java.io.Serializable;
 public class DtoAuthorsRequest implements Serializable {
 
     private String name;
-
     private String surname;
 }

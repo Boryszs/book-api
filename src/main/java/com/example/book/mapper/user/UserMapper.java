@@ -10,14 +10,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserMapper {
 
-    private PasswordEncoder bcryptEncoder;
+    private final PasswordEncoder bcryptEncoder;
 
     @Autowired
     public UserMapper(PasswordEncoder bcryptEncoder) {
         this.bcryptEncoder = bcryptEncoder;
     }
 
-    public UserResponse toUserRequest(User user){
+    public UserResponse toUserRequest(User user) {
         UserResponse userResponse = new UserResponse();
         userResponse.setId(user.getId());
         userResponse.setName(user.getName());
@@ -27,7 +27,7 @@ public class UserMapper {
         return userResponse;
     }
 
-    public User toUser(UserRequest userRequest){
+    public User toUser(UserRequest userRequest) {
         User user = new User();
         user.setName(userRequest.getName());
         user.setSurname(userRequest.getSurname());

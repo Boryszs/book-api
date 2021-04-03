@@ -12,7 +12,7 @@ import java.util.List;
 @Component
 public class AuthorListMapper {
 
-    public List<DtoAuthorResponse> toDtoAuthor(List<Authors> authors){
+    public List<DtoAuthorResponse> toDtoAuthor(List<Authors> authors) {
         List<DtoAuthorResponse> authorList = new LinkedList<>();
 
         authors.forEach(author -> {

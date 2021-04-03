@@ -12,36 +12,36 @@ import java.util.List;
 @Component
 public class BookMapper {
 
-   public DtoBookResponse toDtoBook(Book book){
-       List<DtoAuthorsResponse> authorList = new LinkedList<>();
-       DtoBookResponse dtoBookResponse = new DtoBookResponse();
+    public DtoBookResponse toDtoBook(Book book) {
+        List<DtoAuthorsResponse> authorList = new LinkedList<>();
+        DtoBookResponse dtoBookResponse = new DtoBookResponse();
 
-       dtoBookResponse.setId(book.getId());
-       dtoBookResponse.setTitle(book.getTitle());
-       dtoBookResponse.setPublished(book.getPublished());
-       dtoBookResponse.setImage(book.getImage());
-       dtoBookResponse.setAvailable(book.getAvailable());
-       dtoBookResponse.setDescription(book.getDescription());
-       book.getAuthors().forEach(authors -> {
-           DtoAuthorsResponse dtoAuthor = new DtoAuthorsResponse();
-           dtoAuthor.setId(authors.getId());
-           dtoAuthor.setName(authors.getName());
-           dtoAuthor.setSurname(authors.getSurname());
-           authorList.add(dtoAuthor);
-       });
-       dtoBookResponse.setAuthor(authorList);
+        dtoBookResponse.setId(book.getId());
+        dtoBookResponse.setTitle(book.getTitle());
+        dtoBookResponse.setPublished(book.getPublished());
+        dtoBookResponse.setImage(book.getImage());
+        dtoBookResponse.setAvailable(book.getAvailable());
+        dtoBookResponse.setDescription(book.getDescription());
+        book.getAuthors().forEach(authors -> {
+            DtoAuthorsResponse dtoAuthor = new DtoAuthorsResponse();
+            dtoAuthor.setId(authors.getId());
+            dtoAuthor.setName(authors.getName());
+            dtoAuthor.setSurname(authors.getSurname());
+            authorList.add(dtoAuthor);
+        });
+        dtoBookResponse.setAuthor(authorList);
 
-       return dtoBookResponse;
-   }
+        return dtoBookResponse;
+    }
 
-    public Book toBook(DtoBooksRequest dtoBooksRequest){
-       Book book = new Book();
-       book.setImage(dtoBooksRequest.getImage());
-       book.setTitle(dtoBooksRequest.getTitle());
-       book.setPublished(dtoBooksRequest.getPublished());
-       book.setAvailable(dtoBooksRequest.getAvailable());
-       book.setDescription(dtoBooksRequest.getDescription());
-       return book;
+    public Book toBook(DtoBooksRequest dtoBooksRequest) {
+        Book book = new Book();
+        book.setImage(dtoBooksRequest.getImage());
+        book.setTitle(dtoBooksRequest.getTitle());
+        book.setPublished(dtoBooksRequest.getPublished());
+        book.setAvailable(dtoBooksRequest.getAvailable());
+        book.setDescription(dtoBooksRequest.getDescription());
+        return book;
     }
 
 }
