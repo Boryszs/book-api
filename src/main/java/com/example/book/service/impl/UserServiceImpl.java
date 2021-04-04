@@ -2,10 +2,12 @@ package com.example.book.service.impl;
 
 import com.example.book.dto.request.UserRequest;
 import com.example.book.dto.response.UserResponse;
+import com.example.book.exception.RequestException;
 import com.example.book.mapper.user.UserMapper;
 import com.example.book.repository.UserRepository;
 import com.example.book.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -21,10 +23,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void save(UserRequest userRequest) {
+    public void save(UserRequest userRequest) throws RequestException {
         if (!userRepository.existsByNameOrEmail(userRequest.getName(), userRequest.getEmail())) {
             userRepository.save(userMapper.toUser(userRequest));
-        }
+        }else throw new RequestException("User Exist");
     }
 
     @Override

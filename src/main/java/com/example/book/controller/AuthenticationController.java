@@ -4,6 +4,7 @@ import com.example.book.dto.request.AuthenticationRequest;
 import com.example.book.dto.request.UserRequest;
 import com.example.book.dto.response.AuthenticationResponse;
 import com.example.book.dto.response.UserResponse;
+import com.example.book.exception.RequestException;
 import com.example.book.security.JwtTokenUtil;
 import com.example.book.service.UserService;
 import com.example.book.service.impl.JwtUserServiceImpl;
@@ -51,8 +52,12 @@ public class AuthenticationController {
 
 
     @PostMapping(value = "/register")
-    public ResponseEntity createUser(@RequestBody UserRequest userRequest) throws Exception {
-        userService.save(userRequest);
-        return new ResponseEntity(HttpStatus.CREATED);
+    public ResponseEntity createUser(@RequestBody UserRequest userRequest){
+        try {
+            userService.save(userRequest);
+            return new ResponseEntity(HttpStatus.CREATED);
+        } catch (RequestException e) {
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+        }
     }
 }

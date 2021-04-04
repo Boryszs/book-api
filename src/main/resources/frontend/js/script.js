@@ -1,5 +1,10 @@
 
 logIn = () =>{
+
+    if(!$('#form').valid()){
+        return;
+    }
+
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
@@ -12,8 +17,6 @@ logIn = () =>{
         dataType: "json",
         success: function (response) {
             Cookies.set("token", JSON.stringify(response), {sameSite: 'strict'}, {secure: true});
-            // Cookies.set("token", data.jwt_token, {sameSite: 'strict'}, {secure: true});
-            // Cookies.set("id", data.id, {sameSite: 'strict'}, {secure: true});
             window.location.href = 'books.html';
         },
         error: function (xhr) {

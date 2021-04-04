@@ -2,16 +2,62 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Rejestracja</title>
     <script type="text/javascript">
 
+        $.validator.addMethod(
+            "regex",
+            function (value, element, regexp) {
+                return this.optional(element) || regexp.test(value);
+            },
+        );
+
+        $(document).ready(function () {
+            $('#form').validate({
+                rules: {
+                    username: {
+                        required: true,
+                    },
+                    password: {
+                        required: true,
+                        pattern: "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+                    },
+                    name: {
+                        required: true,
+                    },
+                    surname: {
+                        required: true,
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages:{
+                    username:"Invalid username",
+                    password:"Invalid password",
+                    name:"Invalid name",
+                    surname:"Invalid surname",
+                    email:"Invalid email"
+
+                }
+            });
+        })
+
 
         function register() {
+
+            if(!$('#form').valid()){
+                return;
+            }
             let username = document.getElementById("username").value;
             let password = document.getElementById("password").value;
             let name = document.getElementById("name").value;
@@ -33,8 +79,8 @@
                 complete: function (xhr) {
                     if (xhr.status == 201) {
                         window.location.href = "login.html";
-                    } else {
-                        console.log("error");
+                    } else if (xhr.status == 400) {
+                        $('#error').html('Taki użytkownik istnieje !!! ');
                     }
                 }
             });
@@ -45,18 +91,24 @@
 <body>
 <div class="container">
     <div class="main">
+        <p id="error" style="color: red;font-weight: bold"></p>
         <h2>Rejestracja:</h2>
-        <form id="form_id" method="post">
-            <label>User Name :</label>
+        <form id="form" method="post">
+            <br>
+            <label for="username">User Name :</label>
             <input type="text" name="username" id="username"/>
-            <label>Password :</label>
-            <input type="password" name="password" id="password"/>
-            <label>Name :</label>
-            <input type="text" name="name" id="name"/>
-            <label>Surname :</label>
-            <input type="text" name="surname" id="surname"/>
-            <label>Email :</label>
-            <input type="text" name="email" id="email"/>
+            <br>
+            <label for="password">Password :</label>
+            <input type="password" class="left" name="password" id="password"/>
+            <br>
+            <label for="name">Name :</label>
+            <input type="text" class="left" name="name" id="name"/>
+            <br>
+            <label for="surname">Surname :</label>
+            <input type="text" class="left" name="surname" id="surname"/>
+            <br>
+            <label for="email">Email :</label>
+            <input type="text" class="left" name="email" id="email"/>
             <input type="button" value="Zarejestruj się" id="submit" onclick="register()"/>
         </form>
         <div class="text-center">
