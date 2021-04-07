@@ -7,7 +7,6 @@ import com.example.book.mapper.user.UserMapper;
 import com.example.book.repository.UserRepository;
 import com.example.book.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 @Service
