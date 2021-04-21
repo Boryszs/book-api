@@ -38,11 +38,13 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public List<DtoBookResponse> findAll() {
+        bookRepository.checkAvailable(true);
         return bookListMapper.toDtoBook(bookRepository.findAll());
     }
 
     @Override
     public DtoBookResponse findById(Integer id) {
+        bookRepository.checkAvailable(true);
         return bookMapper.toDtoBook(bookRepository.findById(id).get());
     }
 

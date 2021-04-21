@@ -27,7 +27,6 @@ public class ErrorController {
         return "error";
     }
 
-
     @GetMapping("/access-denied")
     public String accessDenied() {
         return "error";

@@ -2,6 +2,7 @@ package com.example.book.service.impl;
 
 import com.example.book.dto.request.DtoReservationRequest;
 import com.example.book.dto.response.DtoReservationsResponse;
+import com.example.book.entity.Book;
 import com.example.book.entity.Reservations;
 import com.example.book.mapper.reservation.ReservationListMapper;
 import com.example.book.mapper.reservation.ReservationMapper;
@@ -41,7 +42,10 @@ public class ReservationServiceImpl implements ReservationService {
     @Override
     public void save(DtoReservationRequest reservations) {
         Reservations reservation = reservationMapper.toReservations(reservations);
-        reservation.setBook(bookRepository.findById(reservations.getBookId()).get());
+        Book book = bookRepository.findById(reservations.getBookId()).get();
+        book.setAvailable(false);
+        bookRepository.save(book);
+        reservation.setBook(book);
         reservation.setUser(userRepository.findById(reservations.getUserId()).get());
         reservationRepository.save(reservation);
     }
