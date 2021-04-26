@@ -12,6 +12,9 @@ import com.example.book.repository.AuthorRespoitory;
 import com.example.book.repository.BookRepository;
 import com.example.book.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.LinkedList;
@@ -43,6 +46,12 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
+    public List<DtoBookResponse> findAllPagination(Integer pageNo, Integer pageSize) {
+        Pageable paging = PageRequest.of(pageNo, pageSize);
+        return bookListMapper.toDtoBook(bookRepository.findAll(paging).getContent());
+    }
+
+    @Override
     public DtoBookResponse findById(Integer id) {
         bookRepository.checkAvailable(true);
         return bookMapper.toDtoBook(bookRepository.findById(id).get());
@@ -51,6 +60,11 @@ public class BookServiceImpl implements BookService {
     @Override
     public void deleteById(Integer id) {
         bookRepository.deleteById(id);
+    }
+
+    @Override
+    public long count() {
+        return bookRepository.count();
     }
 
     @Override

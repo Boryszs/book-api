@@ -32,6 +32,19 @@ public class BookController {
         return new ResponseEntity(bookService.findAll(), HttpStatus.OK);
     }
 
+    @GetMapping("/pagination")
+    public ResponseEntity<List<DtoBookResponse>> getAllBookPagination(@RequestParam(value ="page", defaultValue = "0") Integer page,
+                                                            @RequestParam(value = "size", defaultValue = "10") Integer size) {
+        LOGGER.info("GET ALL BOOKS PAGINATION");
+        return new ResponseEntity(bookService.findAllPagination(page,size), HttpStatus.OK);
+    }
+
+    @GetMapping("/count")
+    public ResponseEntity<Integer> count() {
+        LOGGER.info("GET ALL BOOKS PAGINATION");
+        return new ResponseEntity(bookService.count(), HttpStatus.OK);
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<DtoBookResponse> getBook(@PathVariable(value = "id") Integer id) {
         LOGGER.info("GET BOOK TITLE ", id);

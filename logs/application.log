@@ -4939,3 +4939,366 @@ org.springframework.security.core.userdetails.UsernameNotFoundException: User no
 2021-04-21T18:33:42.447+0200 INFO ADD RESERVATION
 2021-04-21T18:33:42.626+0200 INFO GET ALL BOOKS
 2021-04-21T18:33:43.647+0200 INFO GET BOOK TITLE 
+2021-04-26T22:26:14.842+0200 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 11132 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-04-26T22:26:14.852+0200 INFO No active profile set, falling back to default profiles: default
+2021-04-26T22:26:16.004+0200 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-26T22:26:16.091+0200 INFO Finished Spring Data repository scanning in 82 ms. Found 4 JPA repository interfaces.
+2021-04-26T22:26:16.382+0200 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7135ce0a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26T22:26:16.387+0200 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26T22:26:16.660+0200 INFO Tomcat initialized with port(s): 8080 (http)
+2021-04-26T22:26:16.668+0200 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-26T22:26:16.669+0200 INFO Starting service [Tomcat]
+2021-04-26T22:26:16.669+0200 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-26T22:26:16.773+0200 INFO Initializing Spring embedded WebApplicationContext
+2021-04-26T22:26:16.773+0200 INFO Root WebApplicationContext: initialization completed in 1883 ms
+2021-04-26T22:26:16.810+0200 INFO HikariPool-1 - Starting...
+2021-04-26T22:26:16.932+0200 INFO HikariPool-1 - Start completed.
+2021-04-26T22:26:16.936+0200 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-04-26T22:26:17.052+0200 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-26T22:26:17.112+0200 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-26T22:26:17.269+0200 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-26T22:26:17.381+0200 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-26T22:26:17.954+0200 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-26T22:26:17.961+0200 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-26T22:26:18.350+0200 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-26T22:26:18.820+0200 INFO Will secure Ant [pattern='/h2-console/**'] with []
+2021-04-26T22:26:18.820+0200 INFO Will secure Ant [pattern='/v2/api-docs'] with []
+2021-04-26T22:26:18.820+0200 INFO Will secure Ant [pattern='/configuration/ui'] with []
+2021-04-26T22:26:18.821+0200 INFO Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-04-26T22:26:18.821+0200 INFO Will secure Ant [pattern='/configuration/security'] with []
+2021-04-26T22:26:18.821+0200 INFO Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-04-26T22:26:18.821+0200 INFO Will secure Ant [pattern='/webjars/**'] with []
+2021-04-26T22:26:18.944+0200 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f047670, org.springframework.security.web.context.SecurityContextPersistenceFilter@2284058a, org.springframework.security.web.header.HeaderWriterFilter@213bd66a, org.springframework.web.filter.CorsFilter@7a91027c, org.springframework.security.web.authentication.logout.LogoutFilter@12ebcdf6, com.example.book.security.JwtFilter@58720eb9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cf39df6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43778d6d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27d44578, org.springframework.security.web.session.SessionManagementFilter@55ba4bff, org.springframework.security.web.access.ExceptionTranslationFilter@25d87313, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f0b5d79]
+2021-04-26T22:26:18.981+0200 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26T22:26:19.146+0200 INFO Starting ProtocolHandler ["http-nio-8080"]
+2021-04-26T22:26:19.167+0200 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26T22:26:19.173+0200 INFO Context refreshed
+2021-04-26T22:26:19.186+0200 INFO Found 1 custom documentation plugin(s)
+2021-04-26T22:26:19.194+0200 INFO Scanning for api listing references
+2021-04-26T22:26:19.329+0200 INFO Generating unique operation named: getAllBookUsingGET_1
+2021-04-26T22:26:19.373+0200 INFO Started BookApplication in 4.871 seconds (JVM running for 7.547)
+2021-04-26T22:27:08.991+0200 WARN RMI TCP Accept-0: accept loop for ServerSocket[addr=0.0.0.0/0.0.0.0,localport=49712] throws
+java.io.IOException: The server sockets created using the LocalRMIServerSocketFactory only accept connections from clients running on the host where the RMI remote objects have been exported.
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:114) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:413) [?:?]
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:377) [?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-26T22:27:12.872+0200 WARN HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s505ms354µs600ns).
+2021-04-26T22:27:47.346+0200 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26T22:27:47.347+0200 INFO Initializing Servlet 'dispatcherServlet'
+2021-04-26T22:27:47.349+0200 INFO Completed initialization in 2 ms
+2021-04-26T22:27:47.389+0200 WARN JWT Token does not begin with Bearer String
+2021-04-26T22:28:00.426+0200 WARN JWT Token does not begin with Bearer String
+2021-04-26T22:28:01.020+0200 INFO GET ALL BOOKS
+2021-04-26T22:29:09.103+0200 INFO GET ALL BOOKS
+2021-04-26T22:34:47.921+0200 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 13132 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-04-26T22:34:47.932+0200 INFO No active profile set, falling back to default profiles: default
+2021-04-26T22:34:49.109+0200 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-26T22:34:49.217+0200 INFO Finished Spring Data repository scanning in 99 ms. Found 4 JPA repository interfaces.
+2021-04-26T22:34:49.723+0200 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5e0c4f21' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26T22:34:49.746+0200 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26T22:34:50.299+0200 INFO Tomcat initialized with port(s): 8080 (http)
+2021-04-26T22:34:50.313+0200 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-26T22:34:50.314+0200 INFO Starting service [Tomcat]
+2021-04-26T22:34:50.315+0200 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-26T22:34:50.503+0200 INFO Initializing Spring embedded WebApplicationContext
+2021-04-26T22:34:50.504+0200 INFO Root WebApplicationContext: initialization completed in 2524 ms
+2021-04-26T22:34:50.595+0200 INFO HikariPool-1 - Starting...
+2021-04-26T22:34:50.738+0200 INFO HikariPool-1 - Start completed.
+2021-04-26T22:34:50.749+0200 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-04-26T22:34:51.118+0200 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-26T22:34:51.217+0200 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-26T22:34:51.494+0200 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-26T22:34:51.661+0200 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-26T22:34:52.953+0200 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-26T22:34:52.968+0200 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-26T22:34:53.586+0200 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-26T22:34:54.357+0200 INFO Will secure Ant [pattern='/h2-console/**'] with []
+2021-04-26T22:34:54.357+0200 INFO Will secure Ant [pattern='/v2/api-docs'] with []
+2021-04-26T22:34:54.357+0200 INFO Will secure Ant [pattern='/configuration/ui'] with []
+2021-04-26T22:34:54.357+0200 INFO Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-04-26T22:34:54.358+0200 INFO Will secure Ant [pattern='/configuration/security'] with []
+2021-04-26T22:34:54.358+0200 INFO Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-04-26T22:34:54.358+0200 INFO Will secure Ant [pattern='/webjars/**'] with []
+2021-04-26T22:34:54.540+0200 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f09cb98, org.springframework.security.web.context.SecurityContextPersistenceFilter@43d2c8e3, org.springframework.security.web.header.HeaderWriterFilter@44ac94c2, org.springframework.web.filter.CorsFilter@7236213e, org.springframework.security.web.authentication.logout.LogoutFilter@723081a2, com.example.book.security.JwtFilter@5b76b891, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a9d572, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39a1c200, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b3dc752, org.springframework.security.web.session.SessionManagementFilter@58fadccb, org.springframework.security.web.access.ExceptionTranslationFilter@22b4ad0c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b8ac512]
+2021-04-26T22:34:54.616+0200 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26T22:34:54.892+0200 INFO Starting ProtocolHandler ["http-nio-8080"]
+2021-04-26T22:34:54.932+0200 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26T22:34:54.942+0200 INFO Context refreshed
+2021-04-26T22:34:54.960+0200 INFO Found 1 custom documentation plugin(s)
+2021-04-26T22:34:54.968+0200 INFO Scanning for api listing references
+2021-04-26T22:34:55.198+0200 INFO Generating unique operation named: getAllBookUsingGET_1
+2021-04-26T22:34:55.281+0200 INFO Started BookApplication in 7.746 seconds (JVM running for 10.605)
+2021-04-26T22:35:18.052+0200 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26T22:35:18.052+0200 INFO Initializing Servlet 'dispatcherServlet'
+2021-04-26T22:35:18.054+0200 INFO Completed initialization in 0 ms
+2021-04-26T22:35:18.079+0200 WARN JWT Token does not begin with Bearer String
+2021-04-26T22:36:56.589+0200 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:354) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541) ~[jjwt-0.9.1.jar:0.9.1]
+	at com.example.book.security.JwtTokenUtil.getAllClaimsFromToken(JwtTokenUtil.java:37) ~[classes/:?]
+	at com.example.book.security.JwtTokenUtil.getClaimFromToken(JwtTokenUtil.java:32) ~[classes/:?]
+	at com.example.book.security.JwtTokenUtil.getUsernameFrom(JwtTokenUtil.java:24) ~[classes/:?]
+	at com.example.book.security.JwtFilter.doFilterInternal(JwtFilter.java:41) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-04-26T22:36:56.607+0200 WARN Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-04-26T22:37:13.029+0200 WARN JWT Token does not begin with Bearer String
+2021-04-26T22:37:13.038+0200 WARN Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-04-26T22:37:17.846+0200 WARN JWT Token does not begin with Bearer String
+2021-04-26T22:37:37.377+0200 WARN JWT Token does not begin with Bearer String
+2021-04-26T22:40:16.767+0200 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 6992 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-04-26T22:40:16.777+0200 INFO No active profile set, falling back to default profiles: default
+2021-04-26T22:40:17.613+0200 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-26T22:40:17.697+0200 INFO Finished Spring Data repository scanning in 78 ms. Found 4 JPA repository interfaces.
+2021-04-26T22:40:17.961+0200 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2c18a3ea' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26T22:40:17.966+0200 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26T22:40:18.187+0200 INFO Tomcat initialized with port(s): 8080 (http)
+2021-04-26T22:40:18.197+0200 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-26T22:40:18.197+0200 INFO Starting service [Tomcat]
+2021-04-26T22:40:18.197+0200 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-26T22:40:18.297+0200 INFO Initializing Spring embedded WebApplicationContext
+2021-04-26T22:40:18.297+0200 INFO Root WebApplicationContext: initialization completed in 1474 ms
+2021-04-26T22:40:18.336+0200 INFO HikariPool-1 - Starting...
+2021-04-26T22:40:18.417+0200 INFO HikariPool-1 - Start completed.
+2021-04-26T22:40:18.423+0200 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-04-26T22:40:18.549+0200 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-26T22:40:18.617+0200 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-26T22:40:18.774+0200 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-26T22:40:18.870+0200 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-26T22:40:19.460+0200 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-26T22:40:19.466+0200 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-26T22:40:19.833+0200 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-26T22:40:20.340+0200 INFO Will secure Ant [pattern='/h2-console/**'] with []
+2021-04-26T22:40:20.340+0200 INFO Will secure Ant [pattern='/v2/api-docs'] with []
+2021-04-26T22:40:20.340+0200 INFO Will secure Ant [pattern='/configuration/ui'] with []
+2021-04-26T22:40:20.340+0200 INFO Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-04-26T22:40:20.340+0200 INFO Will secure Ant [pattern='/configuration/security'] with []
+2021-04-26T22:40:20.340+0200 INFO Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-04-26T22:40:20.341+0200 INFO Will secure Ant [pattern='/webjars/**'] with []
+2021-04-26T22:40:20.454+0200 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9120cb5, org.springframework.security.web.context.SecurityContextPersistenceFilter@2284058a, org.springframework.security.web.header.HeaderWriterFilter@213bd66a, org.springframework.web.filter.CorsFilter@18419ab7, org.springframework.security.web.authentication.logout.LogoutFilter@12ebcdf6, com.example.book.security.JwtFilter@6f926d01, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cf39df6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43778d6d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f93ec02, org.springframework.security.web.session.SessionManagementFilter@55ba4bff, org.springframework.security.web.access.ExceptionTranslationFilter@25d87313, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7aad7df5]
+2021-04-26T22:40:20.492+0200 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26T22:40:20.639+0200 INFO Starting ProtocolHandler ["http-nio-8080"]
+2021-04-26T22:40:20.661+0200 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26T22:40:20.668+0200 INFO Context refreshed
+2021-04-26T22:40:20.679+0200 INFO Found 1 custom documentation plugin(s)
+2021-04-26T22:40:20.686+0200 INFO Scanning for api listing references
+2021-04-26T22:40:20.817+0200 INFO Generating unique operation named: getAllBookUsingGET_1
+2021-04-26T22:40:20.856+0200 INFO Started BookApplication in 4.45 seconds (JVM running for 6.156)
+2021-04-26T22:40:23.936+0200 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26T22:40:23.936+0200 INFO Initializing Servlet 'dispatcherServlet'
+2021-04-26T22:40:23.937+0200 INFO Completed initialization in 1 ms
+2021-04-26T22:40:23.953+0200 WARN JWT Token does not begin with Bearer String
+2021-04-26T22:41:19.059+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:41:27.509+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:41:42.455+0200 WARN JWT Token does not begin with Bearer String
+2021-04-26T22:41:42.795+0200 INFO GET ALL BOOKS
+2021-04-26T22:41:53.869+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:49:21.070+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:51:38.284+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:51:53.013+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:52:05.149+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:52:22.872+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:52:57.674+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:54:03.955+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:54:12.589+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:54:15.822+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:54:24.399+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:55:24.737+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:55:43.151+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:55:59.613+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:57:57.796+0200 INFO Starting BookApplication using Java 15.0.1 on DESKTOP-JKIVC41 with PID 2236 (C:\Users\ideapad\Desktop\java\book\book\target\classes started by ideapad in C:\Users\ideapad\Desktop\java\book\book)
+2021-04-26T22:57:57.806+0200 INFO No active profile set, falling back to default profiles: default
+2021-04-26T22:57:58.670+0200 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-26T22:57:58.746+0200 INFO Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2021-04-26T22:57:59.028+0200 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@b0f2d91' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26T22:57:59.034+0200 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26T22:57:59.278+0200 INFO Tomcat initialized with port(s): 8080 (http)
+2021-04-26T22:57:59.288+0200 INFO Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-26T22:57:59.289+0200 INFO Starting service [Tomcat]
+2021-04-26T22:57:59.289+0200 INFO Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-26T22:57:59.387+0200 INFO Initializing Spring embedded WebApplicationContext
+2021-04-26T22:57:59.387+0200 INFO Root WebApplicationContext: initialization completed in 1540 ms
+2021-04-26T22:57:59.430+0200 INFO HikariPool-1 - Starting...
+2021-04-26T22:57:59.519+0200 INFO HikariPool-1 - Start completed.
+2021-04-26T22:57:59.523+0200 INFO H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:testdb'
+2021-04-26T22:57:59.634+0200 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-26T22:57:59.694+0200 INFO HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-26T22:57:59.872+0200 INFO HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-26T22:57:59.981+0200 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-26T22:58:00.670+0200 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-26T22:58:00.680+0200 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-26T22:58:01.076+0200 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-26T22:58:01.613+0200 INFO Will secure Ant [pattern='/h2-console/**'] with []
+2021-04-26T22:58:01.614+0200 INFO Will secure Ant [pattern='/v2/api-docs'] with []
+2021-04-26T22:58:01.614+0200 INFO Will secure Ant [pattern='/configuration/ui'] with []
+2021-04-26T22:58:01.614+0200 INFO Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-04-26T22:58:01.616+0200 INFO Will secure Ant [pattern='/configuration/security'] with []
+2021-04-26T22:58:01.616+0200 INFO Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-04-26T22:58:01.616+0200 INFO Will secure Ant [pattern='/webjars/**'] with []
+2021-04-26T22:58:01.729+0200 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fb2645b, org.springframework.security.web.context.SecurityContextPersistenceFilter@2da8ed80, org.springframework.security.web.header.HeaderWriterFilter@2284058a, org.springframework.web.filter.CorsFilter@16160a37, org.springframework.security.web.authentication.logout.LogoutFilter@768f2398, com.example.book.security.JwtFilter@47f5ab58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d695f9d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@711fbcef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@380e470a, org.springframework.security.web.session.SessionManagementFilter@19b33b0d, org.springframework.security.web.access.ExceptionTranslationFilter@52a8f789, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29280ca6]
+2021-04-26T22:58:01.771+0200 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26T22:58:01.920+0200 INFO Starting ProtocolHandler ["http-nio-8080"]
+2021-04-26T22:58:01.940+0200 INFO Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26T22:58:01.948+0200 INFO Context refreshed
+2021-04-26T22:58:01.959+0200 INFO Found 1 custom documentation plugin(s)
+2021-04-26T22:58:01.966+0200 INFO Scanning for api listing references
+2021-04-26T22:58:02.096+0200 INFO Generating unique operation named: getAllBookUsingGET_1
+2021-04-26T22:58:02.155+0200 INFO Started BookApplication in 4.714 seconds (JVM running for 6.211)
+2021-04-26T22:59:10.232+0200 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26T22:59:10.233+0200 INFO Initializing Servlet 'dispatcherServlet'
+2021-04-26T22:59:10.234+0200 INFO Completed initialization in 1 ms
+2021-04-26T22:59:10.256+0200 WARN JWT Token does not begin with Bearer String
+2021-04-26T22:59:17.521+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T22:59:42.017+0200 WARN JWT Token does not begin with Bearer String
+2021-04-26T22:59:55.308+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:01:56.910+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:01:56.946+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:02:17.351+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:02:17.386+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:02:19.233+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:02:19.280+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:02:20.018+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:02:20.061+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:02:43.397+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:02:43.463+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:02:58.029+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:02:58.083+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:04:26.310+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:04:26.372+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:04:27.356+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:04:30.894+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:04:34.918+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:04:34.963+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:04:49.250+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:04:49.303+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:04:50.746+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:04:50.782+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:04:51.348+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:04:51.400+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:05:12.182+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:05:12.229+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:05:14.084+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:05:14.113+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:05:22.522+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:05:22.586+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:05:22.588+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:05:55.492+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:05:55.542+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:06:02.752+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:06:02.786+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:06:23.547+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:06:23.624+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:06:23.624+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:06:26.838+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:06:28.699+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:06:29.940+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:06:56.292+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:06:59.829+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:00.458+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:02.738+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:03.515+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:29.546+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:29.621+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:29.621+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:31.121+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:35.331+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:41.500+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:44.231+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:46.211+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:49.462+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:52.912+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:54.277+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:07:58.117+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:08:02.550+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:08:05.040+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:08:10.675+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:08:31.188+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:08:32.193+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:08:32.821+0200 INFO GET BOOK TITLE 
+2021-04-26T23:08:36.680+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:08:37.630+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:08:38.955+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:08:41.366+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:08:42.989+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:08:44.540+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:01.081+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:02.928+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:04.482+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:08.210+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:09.791+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:11.431+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:12.756+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:14.491+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:44.781+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:44.809+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:44.810+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:46.489+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:48.122+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:50.434+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:51.501+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:52.656+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:53.874+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:55.050+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:56.165+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:57.960+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:22:59.260+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:23:04.522+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:24:16.932+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:24:16.962+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:24:16.963+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:24:18.318+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:24:19.713+0200 INFO GET ALL BOOKS PAGINATION
+2021-04-26T23:24:21.173+0200 INFO GET ALL BOOKS PAGINATION

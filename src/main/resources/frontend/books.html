@@ -18,15 +18,13 @@
 
         let totalRecords = 0;
         let data = [];
-        let displayRecordsIndex = 0;
-        let endRec = 0;
         let recPerPage = 5;
         let displayRecords = [];
         let totalPage = 0;
         let tokenObject = JSON.parse(Cookies.get("token"));
 
         $.ajax({
-            url: "http://127.0.0.1:8080/book",
+            url: "http://127.0.0.1:8080/book/count",
             async: true,
             headers: {
                 'Accept': 'application/json',
@@ -35,15 +33,35 @@
             },
             type: "GET",
             success: function (response) {
-                totalRecords = response.length;
+                totalRecords = response;
                 totalPage = Math.ceil(totalRecords / recPerPage);
-                data = response;
                 applyPagination();
+                getData(0)
             },
             error: function (xhr) {
                 console.log("error: ", xhr);
             }
         });
+
+        getData = (page) => {
+            $.ajax({
+                url: "http://127.0.0.1:8080/book/pagination?page=" + page + "&size=" + recPerPage,
+                async: true,
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + tokenObject.jwt_token,
+                },
+                type: "GET",
+                success: function (response) {
+                    displayRecords = response
+                    generateTable();
+                },
+                error: function (xhr) {
+                    console.log("error: ", xhr);
+                }
+            });
+        }
 
         goToDetails = (id) => {
             window.location.href = 'detail-book.html?id=' + id;
@@ -68,10 +86,10 @@
                 totalPages: totalPage,
                 visiblePages: 6,
                 onPageClick: function (event, page) {
-                    displayRecordsIndex = Math.max(page - 1, 0) * recPerPage;
-                    endRec = (displayRecordsIndex) + recPerPage;
-                    displayRecords = data.slice(displayRecordsIndex, endRec);
-                    generateTable();
+                    //displayRecordsIndex = data;
+                    //endRec = (displayRecordsIndex) + recPerPage;
+                    //displayRecords = data.slice(displayRecordsIndex, endRec);
+                    getData(page - 1);
                 }
             })
         }
