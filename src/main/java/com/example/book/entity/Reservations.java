@@ -3,6 +3,7 @@ package com.example.book.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
@@ -12,7 +13,7 @@ import java.util.Date;
 @Getter
 @Setter
 @Data
-public class Reservations {
+public class Reservations implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -11,17 +11,22 @@ import com.example.book.mapper.book.BookMapper;
 import com.example.book.repository.AuthorRespoitory;
 import com.example.book.repository.BookRepository;
 import com.example.book.service.BookService;
+import lombok.extern.java.Log;
+import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@Log
 public class BookServiceImpl implements BookService {
 
     private final BookRepository bookRepository;
@@ -57,6 +62,8 @@ public class BookServiceImpl implements BookService {
         return bookMapper.toDtoBook(bookRepository.findById(id).get());
     }
 
+    @Transactional
+    @Modifying
     @Override
     public void deleteById(Integer id) {
         bookRepository.deleteById(id);

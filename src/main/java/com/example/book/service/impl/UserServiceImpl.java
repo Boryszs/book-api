@@ -6,10 +6,13 @@ import com.example.book.exception.RequestException;
 import com.example.book.mapper.user.UserMapper;
 import com.example.book.repository.UserRepository;
 import com.example.book.service.UserService;
+import lombok.extern.java.Log;
+import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Log
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;

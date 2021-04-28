@@ -8,8 +8,11 @@ import java.util.List;
 
 public interface ReservationService {
 
-    List<DtoReservationsResponse> findAll(Long id, Date date);
+    List<DtoReservationsResponse> findAll(Long id);
+
     void save(DtoReservationRequest reservations);
+
     void deleteById(Integer id);
-    void update(DtoReservationRequest reservations,Integer id);
+
+    void update(DtoReservationRequest reservations, Integer id);
 }

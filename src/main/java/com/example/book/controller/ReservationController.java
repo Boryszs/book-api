@@ -37,7 +37,7 @@ public class ReservationController {
     @GetMapping("/{id}")
     public List<DtoReservationsResponse> getReservation(@PathVariable(value = "id") Long id) {
         LOGGER.info("GET RESERVATION");
-        return reservationService.findAll(id, new Date());
+        return reservationService.findAll(id);
     }
 
     @DeleteMapping("/{id}")

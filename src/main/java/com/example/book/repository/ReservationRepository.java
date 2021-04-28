@@ -11,6 +11,6 @@ import java.util.List;
 @Repository
 public interface ReservationRepository extends JpaRepository<Reservations, Integer> {
 
-    @Query(value = "SELECT r FROM Reservations r WHERE r.user.id= ?1 and r.dataTo >= ?2")
-    List<Reservations> findAll(Long id, Date date);
+    @Query(value = "SELECT r FROM Reservations r WHERE r.user.id= ?1 and r.dataTo >= CURRENT_DATE")
+    List<Reservations> findAll(Long id);
 }

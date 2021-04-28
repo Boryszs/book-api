@@ -10,13 +10,18 @@ import com.example.book.repository.BookRepository;
 import com.example.book.repository.ReservationRepository;
 import com.example.book.repository.UserRepository;
 import com.example.book.service.ReservationService;
+import lombok.extern.java.Log;
+import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.Date;
 import java.util.List;
 
 @Service
+@Log
 public class ReservationServiceImpl implements ReservationService {
 
     private final ReservationListMapper reservationListMapper;
@@ -35,8 +40,8 @@ public class ReservationServiceImpl implements ReservationService {
     }
 
     @Override
-    public List<DtoReservationsResponse> findAll(Long id, Date date) {
-        return reservationListMapper.todtoReservationsResponse(reservationRepository.findAll(id, date));
+    public List<DtoReservationsResponse> findAll(Long id) {
+        return reservationListMapper.todtoReservationsResponse(reservationRepository.findAll(id));
     }
 
     @Override
@@ -50,6 +55,8 @@ public class ReservationServiceImpl implements ReservationService {
         reservationRepository.save(reservation);
     }
 
+    @Transactional
+    @Modifying
     @Override
     public void deleteById(Integer id) {
         reservationRepository.deleteById(id);

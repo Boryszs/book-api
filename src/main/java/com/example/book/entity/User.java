@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
@@ -12,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Table(name = "user")
-public class User {
+public class User implements Serializable {
 
     @Id
     @Column(name = "user_id")

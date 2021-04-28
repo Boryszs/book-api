@@ -3,6 +3,7 @@ package com.example.book.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
@@ -12,7 +13,7 @@ import java.util.List;
 @Getter
 @Setter
 @Data
-public class Authors {
+public class Authors implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
